@@ -1,5 +1,6 @@
 import { Linkedin } from "lucide-react";
 import { FOUNDER, BUSINESS } from "@/lib/content";
+import founderHeadshot from "@/assets/founder-headshot.png";
 
 export const FounderSection = () => {
   return (
