@@ -45,17 +45,17 @@
 
     /* shadcn semantic — primary maps to deep ink for readable headlines;
        brand blue is used decoratively + on logo, amber stays CTA-only. */
-    --primary: 215 60% 12%;
+    --primary: 215 60% 14%;
     --primary-foreground: 40 33% 98%;
 
     --secondary: 38 30% 94%;
-    --secondary-foreground: 215 60% 12%;
+    --secondary-foreground: 215 60% 14%;
 
     --muted: 40 20% 92%;
     --muted-foreground: 215 20% 38%;
 
     --accent: 38 30% 94%;
-    --accent-foreground: 215 60% 12%;
+    --accent-foreground: 215 60% 14%;
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 0% 100%;
@@ -67,12 +67,12 @@
     --radius: 0.625rem;
 
     /* Shadows & gradients */
-    --shadow-soft: 0 8px 24px -12px hsl(215 60% 12% / 0.18);
-    --shadow-elevated: 0 20px 50px -20px hsl(215 60% 12% / 0.28);
+    --shadow-soft: 0 8px 24px -12px hsl(215 60% 14% / 0.18);
+    --shadow-elevated: 0 20px 50px -20px hsl(215 60% 14% / 0.28);
     --shadow-cta: 0 10px 24px -8px hsl(28 92% 44% / 0.45);
     --shadow-blue: 0 12px 32px -12px hsl(203 100% 55% / 0.45);
 
-    --gradient-navy: linear-gradient(180deg, hsl(215 65% 10%), hsl(215 70% 6%));
+    --gradient-navy: linear-gradient(180deg, hsl(215 60% 14%), hsl(215 65% 8%));
     --gradient-blue: linear-gradient(135deg, hsl(203 100% 55%), hsl(210 100% 45%));
     --gradient-cream: linear-gradient(180deg, hsl(40 33% 98%), hsl(38 30% 94%));
 
