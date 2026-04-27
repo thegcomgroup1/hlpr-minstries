@@ -21,12 +21,18 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 60% 12%;
 
-    /* Brand — "navy" tokens kept as names but remapped to HLPR blue family
-       so existing components inherit the new palette automatically. */
-    --brand-navy: 203 100% 55%;          /* HLPR bright blue ~#1AA3FF (logo) */
-    --brand-navy-foreground: 0 0% 100%;
-    --brand-navy-deep: 215 65% 10%;      /* deep ink for dark bands */
-    --brand-navy-soft: 215 35% 32%;      /* muted ink for body/secondary text */
+    /* Brand
+       brand-navy = deep ink (text + dark surfaces) — kept dark so existing
+       components stay legible. brand-blue = bright HLPR logo blue, used as
+       a controlled accent (logo, pill dots, link hovers, etc.). */
+    --brand-navy: 215 60% 14%;           /* deep ink */
+    --brand-navy-foreground: 40 33% 98%;
+    --brand-navy-deep: 215 65% 8%;
+    --brand-navy-soft: 215 30% 32%;
+
+    --brand-blue: 203 100% 55%;          /* HLPR bright blue ~#1AA3FF */
+    --brand-blue-foreground: 0 0% 100%;
+    --brand-blue-deep: 210 100% 42%;
 
     --brand-amber: 28 92% 44%;           /* #D97706 */
     --brand-amber-foreground: 0 0% 100%;
@@ -35,7 +41,7 @@
     --brand-cream: 40 33% 98%;
     --brand-cream-deep: 38 30% 94%;
 
-    --brand-teal: 199 85% 78%;           /* soft sky for accents/arch */
+    --brand-teal: 199 70% 78%;           /* soft sky for accents/arch */
 
     /* shadcn semantic — primary maps to deep ink for readable headlines;
        brand blue is used decoratively + on logo, amber stays CTA-only. */
