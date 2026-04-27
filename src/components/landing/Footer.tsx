@@ -10,13 +10,16 @@ export const Footer = () => {
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12 py-14 sm:py-16">
         <div className="grid md:grid-cols-12 gap-10">
           <div className="md:col-span-5">
-            <div className="flex items-center gap-2.5">
-              {/* TODO_MISSING_INPUT: HLPR for Ministries logo lockup SVG — Footer, monogram + wordmark fallback active */}
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-amber font-serif text-lg font-bold text-brand-navy">
-                H
-              </span>
-              <span className="font-serif text-lg font-bold text-brand-cream">
-                HLPR <span className="font-normal text-brand-cream/60">for Ministries</span>
+            <div className="flex items-baseline gap-2">
+              <img
+                src={hlprLogo}
+                alt="HLPR"
+                className="h-7 w-auto select-none brightness-0 invert"
+                style={{ filter: "brightness(0) saturate(100%) invert(58%) sepia(90%) saturate(2200%) hue-rotate(175deg) brightness(102%) contrast(101%)" }}
+                draggable={false}
+              />
+              <span className="font-serif text-base font-semibold text-brand-cream/70">
+                for Ministries
               </span>
             </div>
             <p className="mt-4 text-sm leading-relaxed max-w-sm">
