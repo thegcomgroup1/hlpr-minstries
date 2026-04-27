@@ -32,6 +32,7 @@ export const CtaButton = ({
       window.gtag?.("event", "generate_lead", {
         value: 0,
         currency: "USD",
+        transport_type: "beacon",
       });
     } catch (err) {
       console.warn("Tracking error (non-blocking):", err);
