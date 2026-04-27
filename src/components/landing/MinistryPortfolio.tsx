@@ -93,11 +93,6 @@ export const MinistryPortfolio = () => {
             );
           })}
         </ul>
-
-        {/* Honest caveat */}
-        <p className="mt-10 text-center text-sm text-brand-navy-soft italic max-w-2xl mx-auto">
-          Built before HLPR for Ministries officially launched. Each site got the same care, just without the 14-day promise &amp; monthly management bundled in. That part is new.
-        </p>
       </div>
     </section>
   );
