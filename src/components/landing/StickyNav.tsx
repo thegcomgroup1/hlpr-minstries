@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { BUSINESS, NAV_LINKS } from "@/lib/content";
 import { CtaButton } from "./CtaButton";
 import { cn } from "@/lib/utils";
+import hlprLogo from "@/assets/hlpr-logo.png";
 
 export const StickyNav = () => {
   const [scrolled, setScrolled] = useState(false);
