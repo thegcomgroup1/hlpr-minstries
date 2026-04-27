@@ -16,10 +16,46 @@ export const BUSINESS = {
 };
 
 export const NAV_LINKS = [
+  { label: "Portfolio", href: "#portfolio" },
   { label: "Packages", href: "#pricing" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "Founder", href: "#founder" },
   { label: "FAQ", href: "#faq" },
+];
+
+export const MINISTRY_PORTFOLIO = [
+  {
+    id: "lifework",
+    name: "LifeWork Ministries",
+    niche: "Counseling & Teaching",
+    tagline: "Transforming Lives Through Faith & Purpose",
+    description:
+      "A counseling, teaching, & sponsorship ministry empowering individuals & families to discover their God-given purpose. Full e-commerce, donations, & ministry pages.",
+  },
+  {
+    id: "eden-cove",
+    name: "Eden Cove",
+    niche: "Sacred Farm Retreat",
+    tagline: "Come and Rest a While",
+    description:
+      "A Delaware farm retreat hosting weddings, retreats, & corporate events. Booking flows, activity discovery, & a calm, nature-forward design that mirrors the venue itself.",
+  },
+  {
+    id: "saved-singles",
+    name: "Saved Singles Summit",
+    niche: "Christian Community",
+    tagline: "Presence. Purpose. Passion. Power.",
+    description:
+      "A ministry empowering Christian singles to live purposefully while waiting on God's timing. Event registration, summit promotion, & community-focused design.",
+  },
+  {
+    id: "dunamis",
+    name: "Dunamis Marketing",
+    niche: "Agency Partner",
+    tagline: "We Help Purpose-Driven Brands Grow, Scale, & Multiply Their Impact",
+    description:
+      "A faith-based marketing agency that does radio, TV, & media outreach for ministries. They refer churches to HLPR, we built their digital presence.",
+  },
 ];
 
 export const HERO = {
