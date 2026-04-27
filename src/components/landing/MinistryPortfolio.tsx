@@ -1,17 +1,23 @@
 import { Sparkles } from "lucide-react";
 import { MINISTRY_PORTFOLIO, FOUNDING_PARTNER } from "@/lib/content";
-import {
-  LifeWorkMockup,
-  EdenCoveMockup,
-  SavedSinglesMockup,
-  DunamisMockup,
-} from "./visuals/PortfolioMockups";
+import { BrowserFrame } from "./visuals/BrowserFrame";
+import lifeworkImg from "@/assets/portfolio/lifework.png";
+import edenCoveImg from "@/assets/portfolio/eden-cove.png";
+import savedSinglesImg from "@/assets/portfolio/saved-singles.png";
+import dunamisImg from "@/assets/portfolio/dunamis.png";
 
-const MOCKUP_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
-  lifework: LifeWorkMockup,
-  "eden-cove": EdenCoveMockup,
-  "saved-singles": SavedSinglesMockup,
-  dunamis: DunamisMockup,
+const PORTFOLIO_IMAGES: Record<string, string> = {
+  lifework: lifeworkImg,
+  "eden-cove": edenCoveImg,
+  "saved-singles": savedSinglesImg,
+  dunamis: dunamisImg,
+};
+
+const PORTFOLIO_URLS: Record<string, string> = {
+  lifework: "lifeworkministries.com",
+  "eden-cove": "edencove.org",
+  "saved-singles": "savedsinglessummit.com",
+  dunamis: "dunamismarketing.com",
 };
 
 export const MinistryPortfolio = () => {
@@ -55,14 +61,17 @@ export const MinistryPortfolio = () => {
         {/* 2x2 portfolio grid */}
         <ul className="mt-12 grid sm:grid-cols-2 gap-6 lg:gap-8">
           {MINISTRY_PORTFOLIO.map((p) => {
-            const Mockup = MOCKUP_MAP[p.id];
             return (
               <li
                 key={p.id}
                 className="rounded-2xl bg-card border border-border overflow-hidden shadow-soft hover:shadow-elevated transition-shadow"
               >
-                <div className="aspect-[3/2] w-full overflow-hidden border-b border-border">
-                  {Mockup ? <Mockup className="w-full h-full" /> : null}
+                <div className="aspect-[16/9] w-full overflow-hidden border-b border-border">
+                  <BrowserFrame
+                    imageSrc={PORTFOLIO_IMAGES[p.id]}
+                    imageAlt={`${p.name} website screenshot`}
+                    url={PORTFOLIO_URLS[p.id]}
+                  />
                 </div>
                 <div className="p-6 sm:p-7">
                   <div className="flex items-center justify-between gap-3 mb-3">
