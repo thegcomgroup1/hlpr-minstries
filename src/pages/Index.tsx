@@ -6,7 +6,7 @@ import { RiskReversalStrip } from "@/components/landing/RiskReversalStrip";
 import { ValueProps } from "@/components/landing/ValueProps";
 import { Differentiator } from "@/components/landing/Differentiator";
 import { HowItWorks } from "@/components/landing/HowItWorks";
-import { FounderTrackRecord } from "@/components/landing/FounderTrackRecord";
+import { MinistryPortfolio } from "@/components/landing/MinistryPortfolio";
 import { FounderSection } from "@/components/landing/FounderSection";
 import { Pricing } from "@/components/landing/Pricing";
 import { FudStrip } from "@/components/landing/FudStrip";
@@ -26,7 +26,7 @@ const Index = () => {
         <ValueProps />
         <Differentiator />
         <HowItWorks />
-        <FounderTrackRecord />
+        <MinistryPortfolio />
         <FounderSection />
         <Pricing />
         <FudStrip />

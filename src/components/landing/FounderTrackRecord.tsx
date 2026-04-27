@@ -2,12 +2,11 @@ import {
   CalendarCheck,
   HeartHandshake,
   MailOpen,
-  Sparkles,
   Target,
   TrendingUp,
   Users,
 } from "lucide-react";
-import { FOUNDER_TRACK_RECORD, FOUNDING_PARTNER } from "@/lib/content";
+import { FOUNDER_TRACK_RECORD } from "@/lib/content";
 
 const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   "trending-up": TrendingUp,
@@ -18,37 +17,18 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   "calendar-check": CalendarCheck,
 };
 
+// Reusable Track Record section. Currently unrendered on HLPR for Ministries
+// (replaced by MinistryPortfolio); kept on disk for reuse on hlprsolutions.com.
 export const FounderTrackRecord = () => {
   return (
     <section className="py-20 sm:py-28 bg-background">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-        {/* Founding Partner callout */}
-        <div className="rounded-2xl border border-brand-navy/15 bg-card p-6 sm:p-8 shadow-soft">
-          <div className="flex flex-col md:flex-row md:items-center gap-5">
-            <div className="flex-shrink-0 inline-flex items-center gap-2 self-start md:self-auto rounded-full bg-brand-navy px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-brand-navy-foreground">
-              <Sparkles className="h-3.5 w-3.5 text-brand-amber" aria-hidden />
-              {FOUNDING_PARTNER.badge}
-            </div>
-            <div className="flex-1">
-              <h3 className="font-serif text-xl sm:text-2xl font-bold text-brand-navy text-balance leading-snug">
-                {FOUNDING_PARTNER.headline}{" "}
-                <span className="text-brand-navy-soft font-normal">
-                  {FOUNDING_PARTNER.body}
-                </span>
-              </h3>
-            </div>
-            <div className="flex-shrink-0 font-serif text-base font-bold text-brand-navy">
-              {FOUNDING_PARTNER.spots}
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-14 max-w-3xl">
+        <div className="max-w-3xl">
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-navy text-balance leading-tight">
-            {FOUNDER_TRACK_RECORD.heading}
+            The track record behind the methodology.
           </h2>
           <p className="mt-5 text-lg text-brand-navy-soft leading-relaxed">
-            {FOUNDER_TRACK_RECORD.sub}
+            Five years of paid media, email, &amp; CRO work for clients across multiple industries. Same systems we use for HLPR for Ministries.
           </p>
         </div>
 
