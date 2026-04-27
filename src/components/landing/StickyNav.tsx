@@ -27,13 +27,15 @@ export const StickyNav = () => {
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
         <div className="flex h-16 sm:h-20 items-center justify-between gap-4">
-          <a href="#top" className="flex items-center gap-2.5 group" aria-label={`${BUSINESS.name} home`}>
-            {/* TODO_MISSING_INPUT: HLPR for Ministries logo lockup SVG — Sticky Nav, monogram + wordmark fallback active */}
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-navy font-serif text-lg font-bold text-brand-amber">
-              H
-            </span>
-            <span className="font-serif text-lg sm:text-xl font-bold text-brand-navy tracking-tight">
-              HLPR <span className="text-brand-navy-soft font-normal">for Ministries</span>
+          <a href="#top" className="flex items-baseline gap-2 group" aria-label={`${BUSINESS.name} home`}>
+            <img
+              src={hlprLogo}
+              alt="HLPR"
+              className="h-6 sm:h-7 w-auto select-none"
+              draggable={false}
+            />
+            <span className="font-serif text-base sm:text-lg font-semibold text-brand-navy-soft tracking-tight">
+              for Ministries
             </span>
           </a>
 
