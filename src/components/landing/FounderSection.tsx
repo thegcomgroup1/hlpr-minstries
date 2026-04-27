@@ -51,7 +51,7 @@ export const FounderSection = () => {
                 <p key={p.slice(0, 24)}>{p}</p>
               ))}
             </div>
-            <p className="mt-8 font-signature text-4xl sm:text-5xl text-brand-amber leading-none">
+            <p className="mt-8 font-signature text-4xl sm:text-5xl text-brand-blue leading-none">
               {FOUNDER.signature}
             </p>
           </div>
