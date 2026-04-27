@@ -10,14 +10,15 @@ export const Footer = () => {
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12 py-14 sm:py-16">
         <div className="grid md:grid-cols-12 gap-10">
           <div className="md:col-span-5">
-            <div className="flex items-baseline gap-2">
+            <div className="flex items-center gap-3">
               <img
                 src={hlprLogo}
                 alt="HLPR"
-                className="h-7 w-auto select-none"
+                className="h-8 w-auto select-none"
                 draggable={false}
               />
-              <span className="font-serif text-base font-semibold text-brand-cream/70">
+              <span className="h-6 w-px bg-brand-cream/25" aria-hidden />
+              <span className="font-serif text-base font-medium text-brand-cream/80 tracking-tight leading-none">
                 for Ministries
               </span>
             </div>
