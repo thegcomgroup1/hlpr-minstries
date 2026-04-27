@@ -45,7 +45,7 @@ export const Footer = () => {
               <ul className="mt-4 space-y-2.5">
                 {NAV_LINKS.map((l) => (
                   <li key={l.href}>
-                    <a href={l.href} className="hover:text-brand-amber transition-colors">
+                    <a href={l.href} className="hover:text-brand-blue transition-colors">
                       {l.label}
                     </a>
                   </li>
@@ -57,8 +57,8 @@ export const Footer = () => {
                 About
               </p>
               <ul className="mt-4 space-y-2.5">
-                <li><a href="#founder" className="hover:text-brand-amber transition-colors">Our Story</a></li>
-                <li><a href="#founder" className="hover:text-brand-amber transition-colors">Founder</a></li>
+                <li><a href="#founder" className="hover:text-brand-blue transition-colors">Our Story</a></li>
+                <li><a href="#founder" className="hover:text-brand-blue transition-colors">Founder</a></li>
               </ul>
             </div>
             <div>
@@ -71,7 +71,7 @@ export const Footer = () => {
                     href={BUSINESS.ctaUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-brand-amber transition-colors"
+                    className="hover:text-brand-blue transition-colors"
                   >
                     Book a preview
                   </a>
@@ -84,8 +84,8 @@ export const Footer = () => {
                 Legal
               </p>
               <ul className="mt-4 space-y-2.5">
-                <li><a href="#" className="hover:text-brand-amber transition-colors">Privacy</a></li>
-                <li><a href="#" className="hover:text-brand-amber transition-colors">Terms</a></li>
+                <li><a href="#" className="hover:text-brand-blue transition-colors">Privacy</a></li>
+                <li><a href="#" className="hover:text-brand-blue transition-colors">Terms</a></li>
               </ul>
             </div>
           </nav>
