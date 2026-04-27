@@ -27,14 +27,15 @@ export const StickyNav = () => {
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
         <div className="flex h-16 sm:h-20 items-center justify-between gap-4">
-          <a href="#top" className="flex items-baseline gap-2 group" aria-label={`${BUSINESS.name} home`}>
+          <a href="#top" className="flex items-center gap-2.5 sm:gap-3 group" aria-label={`${BUSINESS.name} home`}>
             <img
               src={hlprLogo}
               alt="HLPR"
-              className="h-6 sm:h-7 w-auto select-none"
+              className="h-7 sm:h-8 w-auto select-none"
               draggable={false}
             />
-            <span className="font-serif text-base sm:text-lg font-semibold text-brand-navy-soft tracking-tight">
+            <span className="hidden sm:block h-6 w-px bg-brand-navy/20" aria-hidden />
+            <span className="font-serif text-sm sm:text-base font-medium text-brand-navy-soft tracking-tight leading-none">
               for Ministries
             </span>
           </a>
