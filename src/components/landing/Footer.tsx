@@ -1,5 +1,6 @@
 import { Linkedin } from "lucide-react";
 import { BUSINESS, NAV_LINKS } from "@/lib/content";
+import hlprLogo from "@/assets/hlpr-logo.png";
 
 export const Footer = () => {
   const year = new Date().getFullYear();
