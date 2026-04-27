@@ -30,7 +30,7 @@ export const FounderSection = () => {
                   href={FOUNDER.linkedinUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-2 inline-flex items-center gap-1.5 text-sm text-brand-amber hover:underline"
+                  className="mt-2 inline-flex items-center gap-1.5 text-sm text-brand-blue hover:underline"
                 >
                   <Linkedin className="h-4 w-4" aria-hidden />
                   Connect on LinkedIn
