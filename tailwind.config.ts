@@ -97,9 +97,11 @@ export default {
         soft: "var(--shadow-soft)",
         elevated: "var(--shadow-elevated)",
         cta: "var(--shadow-cta)",
+        blue: "var(--shadow-blue)",
       },
       backgroundImage: {
         'gradient-navy': "var(--gradient-navy)",
+        'gradient-blue': "var(--gradient-blue)",
         'gradient-cream': "var(--gradient-cream)",
       },
       keyframes: {
