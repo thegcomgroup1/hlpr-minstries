@@ -26,12 +26,11 @@ export default {
             deep: "hsl(var(--brand-navy-deep))",
             soft: "hsl(var(--brand-navy-soft))",
           },
-          // Alias: brand.blue == brand.navy (the new HLPR bright blue).
-          // Use whichever name reads better in context.
+          // HLPR bright logo blue — used as a controlled accent.
           blue: {
-            DEFAULT: "hsl(var(--brand-navy))",
-            foreground: "hsl(var(--brand-navy-foreground))",
-            deep: "hsl(var(--brand-navy-deep))",
+            DEFAULT: "hsl(var(--brand-blue))",
+            foreground: "hsl(var(--brand-blue-foreground))",
+            deep: "hsl(var(--brand-blue-deep))",
           },
           amber: {
             DEFAULT: "hsl(var(--brand-amber))",
