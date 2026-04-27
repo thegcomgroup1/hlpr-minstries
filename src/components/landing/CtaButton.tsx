@@ -26,11 +26,25 @@ export const CtaButton = ({
     xl: "px-8 py-5 text-lg sm:text-xl",
   };
 
+  const handleClick = () => {
+    try {
+      window.fbq?.("track", "Lead");
+      window.gtag?.("event", "generate_lead", {
+        value: 0,
+        currency: "USD",
+      });
+    } catch (err) {
+      console.warn("Tracking error (non-blocking):", err);
+    }
+    // intentionally NOT calling preventDefault — let the <a> navigate
+  };
+
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={handleClick}
       aria-label={ariaLabel ?? label}
       className={cn(
         "group inline-flex items-center justify-center gap-2 rounded-xl font-bold tracking-tight",
