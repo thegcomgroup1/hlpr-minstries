@@ -109,18 +109,6 @@ export const VALUE_PROPS = [
     ],
     visual: "managed",
   },
-  {
-    id: "stewardship-priced",
-    eyebrow: "Stewardship-priced",
-    title: "Built for kingdom budgets, not agency portfolios",
-    body: "We treat your ministry like ministry. Transparent flat-rate pricing, no surprise invoices, no lock-in. Every dollar spent on your website is a dollar that has to make sense to your elder board on Monday morning.",
-    bullets: [
-      "Flat-rate pricing, no surprise invoices",
-      "No long-term contract, cancel anytime",
-      "Every package designed for real ministry budgets",
-    ],
-    visual: "budget",
-  },
 ];
 
 export const DIFFERENTIATOR = {
@@ -243,8 +231,8 @@ export const FOUNDER = {
     "I'd be honored to build yours.",
   ],
   signature: "Tim Godson",
-  // TODO_MISSING_INPUT: founder LinkedIn URL — Founder Section, hidden until provided
-  linkedinUrl: "",
+  // TODO_MISSING_INPUT: founder Instagram handle — replace [MY_HANDLE] in the URL below
+  instagramUrl: "https://instagram.com/[MY_HANDLE]",
 };
 
 export const PRICING_TIERS = [
