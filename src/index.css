@@ -4,7 +4,8 @@
 
 /* HLPR for Ministries — Design System
    All colors MUST be HSL.
-   Primary: HLPR deep navy #0E1E3F
+   Primary: HLPR bright blue ~#1AA3FF (from logo)
+   Dark surface: deep ink ~#0B1B2E for contrast bands
    Accent:  Warm amber #D97706 (CTA buttons ONLY)
 */
 
@@ -12,19 +13,26 @@
   :root {
     /* Page surfaces */
     --background: 40 33% 98%;            /* warm cream #FBFAF6 */
-    --foreground: 222 64% 14%;           /* deep navy text */
+    --foreground: 215 60% 12%;           /* deep ink text */
 
     --card: 0 0% 100%;
-    --card-foreground: 222 64% 14%;
+    --card-foreground: 215 60% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 64% 14%;
+    --popover-foreground: 215 60% 12%;
 
-    /* Brand */
-    --brand-navy: 222 64% 15%;           /* #0E1E3F */
+    /* Brand
+       brand-navy = deep ink (text + dark surfaces) — kept dark so existing
+       components stay legible. brand-blue = bright HLPR logo blue, used as
+       a controlled accent (logo, pill dots, link hovers, etc.). */
+    --brand-navy: 215 60% 14%;           /* deep ink */
     --brand-navy-foreground: 40 33% 98%;
-    --brand-navy-deep: 222 70% 9%;
-    --brand-navy-soft: 222 40% 28%;
+    --brand-navy-deep: 215 65% 8%;
+    --brand-navy-soft: 215 30% 32%;
+
+    --brand-blue: 203 100% 55%;          /* HLPR bright blue ~#1AA3FF */
+    --brand-blue-foreground: 0 0% 100%;
+    --brand-blue-deep: 210 100% 42%;
 
     --brand-amber: 28 92% 44%;           /* #D97706 */
     --brand-amber-foreground: 0 0% 100%;
@@ -33,36 +41,39 @@
     --brand-cream: 40 33% 98%;
     --brand-cream-deep: 38 30% 94%;
 
-    --brand-teal: 184 28% 60%;           /* dusty teal for stained-glass arch */
+    --brand-teal: 199 70% 78%;           /* soft sky for accents/arch */
 
-    /* shadcn semantic — primary maps to navy, NOT amber (amber is buttons only) */
-    --primary: 222 64% 15%;
+    /* shadcn semantic — primary maps to deep ink for readable headlines;
+       brand blue is used decoratively + on logo, amber stays CTA-only. */
+    --primary: 215 60% 14%;
     --primary-foreground: 40 33% 98%;
 
     --secondary: 38 30% 94%;
-    --secondary-foreground: 222 64% 15%;
+    --secondary-foreground: 215 60% 14%;
 
     --muted: 40 20% 92%;
-    --muted-foreground: 222 20% 38%;
+    --muted-foreground: 215 20% 38%;
 
     --accent: 38 30% 94%;
-    --accent-foreground: 222 64% 15%;
+    --accent-foreground: 215 60% 14%;
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 222 20% 88%;
-    --input: 222 20% 88%;
-    --ring: 28 92% 44%;
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 203 100% 55%;
 
     --radius: 0.625rem;
 
     /* Shadows & gradients */
-    --shadow-soft: 0 8px 24px -12px hsl(222 64% 15% / 0.18);
-    --shadow-elevated: 0 20px 50px -20px hsl(222 64% 15% / 0.28);
+    --shadow-soft: 0 8px 24px -12px hsl(215 60% 14% / 0.18);
+    --shadow-elevated: 0 20px 50px -20px hsl(215 60% 14% / 0.28);
     --shadow-cta: 0 10px 24px -8px hsl(28 92% 44% / 0.45);
+    --shadow-blue: 0 12px 32px -12px hsl(203 100% 55% / 0.45);
 
-    --gradient-navy: linear-gradient(180deg, hsl(222 64% 15%), hsl(222 70% 9%));
+    --gradient-navy: linear-gradient(180deg, hsl(215 60% 14%), hsl(215 65% 8%));
+    --gradient-blue: linear-gradient(135deg, hsl(203 100% 55%), hsl(210 100% 45%));
     --gradient-cream: linear-gradient(180deg, hsl(40 33% 98%), hsl(38 30% 94%));
 
     /* Sidebar (unused but required) */

@@ -26,6 +26,12 @@ export default {
             deep: "hsl(var(--brand-navy-deep))",
             soft: "hsl(var(--brand-navy-soft))",
           },
+          // HLPR bright logo blue — used as a controlled accent.
+          blue: {
+            DEFAULT: "hsl(var(--brand-blue))",
+            foreground: "hsl(var(--brand-blue-foreground))",
+            deep: "hsl(var(--brand-blue-deep))",
+          },
           amber: {
             DEFAULT: "hsl(var(--brand-amber))",
             foreground: "hsl(var(--brand-amber-foreground))",
@@ -90,9 +96,11 @@ export default {
         soft: "var(--shadow-soft)",
         elevated: "var(--shadow-elevated)",
         cta: "var(--shadow-cta)",
+        blue: "var(--shadow-blue)",
       },
       backgroundImage: {
         'gradient-navy': "var(--gradient-navy)",
+        'gradient-blue': "var(--gradient-blue)",
         'gradient-cream': "var(--gradient-cream)",
       },
       keyframes: {
