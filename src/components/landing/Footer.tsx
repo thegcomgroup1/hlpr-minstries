@@ -14,8 +14,7 @@ export const Footer = () => {
               <img
                 src={hlprLogo}
                 alt="HLPR"
-                className="h-7 w-auto select-none brightness-0 invert"
-                style={{ filter: "brightness(0) saturate(100%) invert(58%) sepia(90%) saturate(2200%) hue-rotate(175deg) brightness(102%) contrast(101%)" }}
+                className="h-7 w-auto select-none"
                 draggable={false}
               />
               <span className="font-serif text-base font-semibold text-brand-cream/70">
