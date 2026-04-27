@@ -65,7 +65,6 @@ export const Pricing = () => {
                   </span>
                 </div>
                 <p className="mt-1 text-sm text-brand-navy-soft">{tier.cadence}</p>
-                {/* TODO_CONFIRM_BUILD_PRICE for Foundation & Growth tiers */}
               </div>
 
               <ul className="mt-7 space-y-3 flex-1">

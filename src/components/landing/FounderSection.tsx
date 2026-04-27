@@ -1,4 +1,4 @@
-import { Linkedin } from "lucide-react";
+import { Instagram } from "lucide-react";
 import { FOUNDER, BUSINESS } from "@/lib/content";
 import founderHeadshot from "@/assets/founder-headshot.png";
 
@@ -25,15 +25,15 @@ export const FounderSection = () => {
             <div>
               <p className="font-serif text-xl font-bold">{FOUNDER.name}</p>
               <p className="text-sm text-brand-cream/70">{FOUNDER.title}</p>
-              {FOUNDER.linkedinUrl && (
+              {FOUNDER.instagramUrl && (
                 <a
-                  href={FOUNDER.linkedinUrl}
+                  href={FOUNDER.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 inline-flex items-center gap-1.5 text-sm text-brand-blue hover:underline"
                 >
-                  <Linkedin className="h-4 w-4" aria-hidden />
-                  Connect on LinkedIn
+                  <Instagram className="h-4 w-4" aria-hidden />
+                  Follow on Instagram
                 </a>
               )}
             </div>

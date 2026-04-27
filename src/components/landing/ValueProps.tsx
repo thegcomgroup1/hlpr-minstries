@@ -4,7 +4,6 @@ import {
   SermonLibraryViz,
   CalendarViz,
   ManagedViz,
-  BudgetViz,
 } from "./visuals";
 import { cn } from "@/lib/utils";
 
@@ -12,7 +11,6 @@ const VISUAL_MAP: Record<string, React.ComponentType<{ className?: string }>> = 
   ministry: SermonLibraryViz,
   calendar: CalendarViz,
   managed: ManagedViz,
-  budget: BudgetViz,
 };
 
 export const ValueProps = () => {
