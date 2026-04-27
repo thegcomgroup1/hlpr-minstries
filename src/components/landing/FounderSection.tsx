@@ -40,7 +40,7 @@ export const FounderSection = () => {
           </div>
 
           <div className="md:col-span-8">
-            <p className="text-xs sm:text-sm uppercase tracking-wider font-semibold text-brand-amber">
+            <p className="text-xs sm:text-sm uppercase tracking-wider font-semibold text-brand-blue">
               A note from the founder
             </p>
             <h2 className="mt-3 font-serif text-3xl sm:text-4xl font-bold text-balance leading-tight">
