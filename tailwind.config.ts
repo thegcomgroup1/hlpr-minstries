@@ -26,6 +26,13 @@ export default {
             deep: "hsl(var(--brand-navy-deep))",
             soft: "hsl(var(--brand-navy-soft))",
           },
+          // Alias: brand.blue == brand.navy (the new HLPR bright blue).
+          // Use whichever name reads better in context.
+          blue: {
+            DEFAULT: "hsl(var(--brand-navy))",
+            foreground: "hsl(var(--brand-navy-foreground))",
+            deep: "hsl(var(--brand-navy-deep))",
+          },
           amber: {
             DEFAULT: "hsl(var(--brand-amber))",
             foreground: "hsl(var(--brand-amber-foreground))",
