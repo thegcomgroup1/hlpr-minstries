@@ -60,12 +60,15 @@ export const MINISTRY_PORTFOLIO = [
 
 export const HERO = {
   eyebrow: "For senior pastors & church communications teams",
-  // Headline formula: dream outcome + functional benefit + timeframe + mechanism
+  // Headline formula: outcome-pair (kingdom + bottom-line) + timeframe
+  // "More souls reached" carries the discipleship/eternal weight.
+  // "More seats filled" carries the tithe/seats/reach weight.
+  // Together they're inseparable, which mirrors the ministry truth.
   headline: {
-    pre: "A digital front door as alive as your worship,",
-    bold: "live in 14 days.",
+    pre: "More souls reached. More seats filled.",
+    bold: "Live in 14 days.",
   },
-  sub: "Tired of a church website that's broken on mobile & turning visitors away? We design, build, & manage modern, mobile-first ministry sites, with a free homepage preview in your inbox in 72 hours.",
+  sub: "Your worship is alive. Your preaching is anointed. Your website should match. We build modern, mobile-first ministry sites that turn Saturday-night searches into Wednesday-night faith — with a free homepage preview in 72 hours.",
   trust: [
     "Free preview in 72 hours",
     "No payment until you approve",
@@ -89,6 +92,10 @@ export const FOUNDER_STATS = [
 ];
 
 export const PAIN_POINTS = [
+  {
+    bold: "First-time visitors search for you Saturday night,",
+    rest: "& whatever they find decides whether they show up Sunday morning. Right now, what they find isn't doing your ministry justice.",
+  },
   {
     bold: "Your site looks 10+ years old",
     rest: "& it's broken on mobile, where 87% of first-time visitors actually find you.",
@@ -137,13 +144,25 @@ export const VALUE_PROPS = [
     id: "fully-managed",
     eyebrow: "Fully managed, forever",
     title: "The 'tech person at church' never has to be you",
-    body: "Hosting, security updates, sermon uploads, content tweaks, analytics, all included monthly. You email us, we ship. Your team gets back to ministry instead of fighting WordPress plugins at 11pm on Saturday.",
+    body: "Hosting, security updates, sermon uploads, content tweaks, analytics — all included monthly. You email us, we ship. Your team gets back to ministry instead of fighting WordPress plugins at 11pm on Saturday.",
     bullets: [
       "Hosting + monthly security updates included",
       "Sermon & content updates handled for you",
       "Monthly analytics + recommendations call",
     ],
     visual: "managed",
+  },
+  {
+    id: "kingdom-impact",
+    eyebrow: "The reach you've been called to",
+    title: "Meet your community where they actually are — on their phone",
+    body: "Most Gen Z visitors discover churches on their phone first — long before they ever walk through your doors. Your site is the first sermon they'll experience. We design every page to turn first-time mobile visitors into in-person attenders, recurring givers, & lifelong members of your congregation.",
+    bullets: [
+      "Mobile-first design that holds up on any screen size",
+      "First-visit conversion paths (plan-a-visit, give, sermon preview)",
+      "Built for the generation rediscovering Christ on their phone",
+    ],
+    visual: "ministry",
   },
 ];
 
@@ -215,44 +234,44 @@ export const FOUNDING_PARTNER = {
 
 export const FOUNDER_TRACK_RECORD = {
   heading:
-    "We don't have church client testimonials yet. Here's what we bring to the table.",
-  sub: "HLPR for Ministries is new. The team behind it isn't. These are real numbers from real client work across the last 5 years.",
+    "Our church client testimonials are still coming in. Here's what's already in our hands.",
+  sub: "HLPR for Ministries is new. The team behind it isn't. These are real numbers from real client work across the last 5 years — the same systems we now bring to ministry.",
   cards: [
     {
       icon: "trending-up",
-      stat: "$916K+",
-      context: "Managed in Google Ads campaigns for clients across multiple industries",
-      tag: "Paid Media",
-    },
-    {
-      icon: "target",
-      stat: "$341K+",
-      context: "Managed in Meta Ads spend with full conversion tracking",
-      tag: "Paid Media",
+      stat: "$1.2M+",
+      context: "In paid traffic managed across Google & Meta — the same playbook now driving Saturday-night searches to ministry sites",
+      tag: "Reach",
     },
     {
       icon: "heart-handshake",
       stat: "$170K+",
-      context: "In direct revenue generated for clients through digital systems",
-      tag: "Revenue",
+      context: "In direct client revenue generated through the digital systems we now bring to ministry partners",
+      tag: "Growth",
     },
     {
       icon: "mail-open",
       stat: "68%",
-      context: "Average email open rate for clients (industry average: 20%)",
-      tag: "Email",
-    },
-    {
-      icon: "users",
-      stat: "5",
-      context: "Founding ministry partners we're hand-picking before public launch",
-      tag: "Founding Partners",
+      context: "Average email open rate for our clients (industry average: 20%) — the engagement bar we hold ourselves to",
+      tag: "Engagement",
     },
     {
       icon: "calendar-check",
       stat: "14 days",
-      context: "Average church website launch time, end to end",
+      context: "From kickoff call to public launch — average ministry site go-live time, end to end",
       tag: "Speed",
+    },
+    {
+      icon: "users",
+      stat: "5",
+      context: "Founding ministry partners we're hand-picking before public launch — founding-rate pricing locked in for life",
+      tag: "Founding Partners",
+    },
+    {
+      icon: "shield-check",
+      stat: "100%",
+      context: "Money-back guarantee if your finished site doesn't reflect your ministry — no hostage situations, no fine print",
+      tag: "Stewardship",
     },
   ],
 };
@@ -273,49 +292,34 @@ export const FOUNDER = {
 
 export const PRICING_TIERS = [
   {
-    name: "Foundation",
-    target: "Small churches under 150 members",
-    anchorPrice: "$3,500",
-    price: "$1,500",
-    cadence: "build + $50/mo",
-    savings: "Save $2,000",
-    mostPopular: false,
-    features: [
-      "Custom homepage + 5 core pages (About, Visit, Sermons, Give, Contact)",
-      "Mobile-first responsive design",
-      "Sermon library with YouTube / Vimeo integration",
-      "Plan-Your-Visit form connected to your CRM",
-      "One-tap giving (Tithe.ly, Pushpay, Givelify, or Stripe)",
-      "Hosting + monthly security updates",
-      "Email support (48h response)",
-    ],
-  },
-  {
     name: "Growth",
     target: "Established churches, 150-500 members",
     anchorPrice: "$5,000",
     price: "$2,500",
     cadence: "build + $200/mo",
     savings: "Save $2,500",
-    mostPopular: true,
+    mostPopular: false,
     features: [
-      "Everything in Foundation, plus:",
-      "Up to 12 pages (ministries, staff, events, blog)",
-      "Live stream embed + service archive",
+      "Custom homepage + up to 12 pages (About, Visit, Sermons, Give, Ministries, Staff, Events, Blog, Contact)",
+      "Mobile-first responsive design",
       "Searchable sermon library by topic, series, & scripture",
-      "Newsletter + welcome email automation (Bronze email tier)",
+      "Plan-Your-Visit form connected to your CRM",
+      "One-tap giving (Tithe.ly, Pushpay, Givelify, or Stripe)",
+      "Live stream embed + service archive",
+      "Newsletter + welcome email automation",
+      "Hosting + monthly security updates",
       "Monthly analytics + recommendations call",
       "Priority support (24h response)",
     ],
   },
   {
-    name: "Multi-Site",
-    target: "Churches with 500+ members or multiple campuses",
+    name: "Established",
+    target: "For 500+ congregations & multi-campus ministries",
     anchorPrice: "",
     price: "Custom",
     cadence: "tailored quote",
-    savings: "",
-    mostPopular: false,
+    savings: "Founding-partner pricing locked in",
+    mostPopular: true,
     features: [
       "Everything in Growth, plus:",
       "Multi-campus / multi-site architecture",
@@ -323,6 +327,7 @@ export const PRICING_TIERS = [
       "Custom integrations (Planning Center, CCB, Tithe.ly, Pushpay)",
       "Dedicated account manager",
       "Quarterly strategy sessions",
+      "Direct text access to the founder throughout the build",
     ],
   },
 ];
@@ -339,7 +344,7 @@ export const FUD_ITEMS = [
 
 export const FINAL_CTA = {
   headline:
-    "Your ministry deserves a digital front door as alive as your worship.",
+    "More souls reached. More seats filled. Live in 14 days.",
   sub: BUSINESS.riskReversal,
 };
 
@@ -349,8 +354,12 @@ export const FAQS = [
     a: "Yes. We've designed HLPR for Ministries to feel like home for non-denom, evangelical, mainline, charismatic, & Spanish-speaking congregations alike. Your site is custom-built to reflect your specific ministry's voice, language, & visual identity, never a one-size-fits-all template.",
   },
   {
+    q: "Will my site reflect our doctrine and aesthetic, or will it look like every other 'church website'?",
+    a: "Your site reflects your ministry — period. We start every build by listening: your statement of faith, your traditions, your visual language, the way your congregation actually talks. A Reformed Baptist site looks Reformed Baptist. A Pentecostal site looks Pentecostal. An Anglican site looks Anglican. We never push templates. We never paint your ministry into a generic 'evangelical brand.' If our first homepage preview misses your doctrine or aesthetic, we rebuild it until it doesn't — at no cost to you.",
+  },
+  {
     q: "How is this different from Sharefaith, Wix, or hiring a freelancer?",
-    a: "Sharefaith & Ekklesia360 lock you into their templates. Wix & Squarespace look generic & weren't built for ministry workflows. Freelancers ghost. We design custom, build for ministry-specific needs (sermons, giving, plan-a-visit), launch in 14 days, & manage everything ongoing, all at a stewardship-priced flat rate.",
+    a: "Sharefaith & Ekklesia360 lock you into their templates. Wix & Squarespace look generic & weren't built for ministry workflows. Freelancers ghost. We design custom, build for ministry-specific needs (sermons, giving, plan-a-visit), launch in 14 days, & manage everything ongoing — all at a stewardship-priced flat rate.",
   },
   {
     q: "Can you really launch a full church website in 14 days?",
@@ -362,11 +371,11 @@ export const FAQS = [
   },
   {
     q: "What if we don't like the design? What if we want to leave later?",
-    a: "If you don't approve the homepage preview, you owe us nothing, ever. After launch, you're on a month-to-month plan, no contract. If you ever want to leave, we'll hand off your site files cleanly. We also offer a 100% money-back guarantee if your finished site doesn't reflect your ministry.",
+    a: "If you don't approve the homepage preview, you owe us nothing, ever. After launch, you're on a month-to-month plan — no contract. If you ever want to leave, we'll hand off your site files cleanly. We also offer a 100% money-back guarantee if your finished site doesn't reflect your ministry.",
   },
   {
     q: "Who runs HLPR? We've never heard of you.",
-    a: "HLPR is led by Tim Godson, who's managed over $916K in Google Ads, $341K in Meta Ads, & generated $170K+ in direct client revenue across the last 5 years. HLPR for Ministries is a new offering, & we're hand-picking our first 5 partners with founding-rate pricing locked in for life. You'll work directly with Tim throughout the build.",
+    a: "HLPR is led by Tim Godson, who's managed over $1.2M in paid traffic across Google & Meta and generated $170K+ in direct client revenue across the last 5 years. The same systems that grew those businesses now power our ministry sites. HLPR for Ministries is a new offering, & we're hand-picking our first 5 partners with founding-rate pricing locked in for life. You'll work directly with Tim throughout the build.",
   },
   {
     q: "How does onboarding work? Who hosts the site? What happens to our existing content?",
