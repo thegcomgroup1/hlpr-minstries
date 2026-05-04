@@ -10,15 +10,16 @@ export const PainPointSection = () => {
         </p>
 
         <p className="mt-5 text-lg text-brand-navy-soft leading-relaxed">
-          You're preaching to a full sanctuary on Sunday. Then on Wednesday, a
-          first-time visitor pulls up your website on her phone, & it's broken.
-          The hero image won't load. The service times are from 2019. The give
-          button goes nowhere.
+          It's 9pm Saturday. A young family three streets over types
+          "churches near me" into Google. Your church comes up. She taps it.
+          Your website loads on her phone, & it's broken. The hero image
+          won't render. The service times haven't been updated since 2019.
+          The give button goes nowhere.
         </p>
 
         <p className="mt-4 text-lg text-brand-navy-soft leading-relaxed">
-          She closes the tab. She doesn't come Sunday. You'll never know she
-          almost did.
+          She closes the tab. They visit the church across town instead.
+          You'll never know they almost came home to you.
         </p>
 
         <h2 className="mt-12 font-serif text-3xl sm:text-4xl font-bold text-brand-navy text-balance leading-tight">

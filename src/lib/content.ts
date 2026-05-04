@@ -60,12 +60,15 @@ export const MINISTRY_PORTFOLIO = [
 
 export const HERO = {
   eyebrow: "For senior pastors & church communications teams",
-  // Headline formula: dream outcome + functional benefit + timeframe + mechanism
+  // Headline formula: outcome-pair (kingdom + bottom-line) + timeframe
+  // "More souls reached" carries the discipleship/eternal weight.
+  // "More seats filled" carries the tithe/seats/reach weight.
+  // Together they're inseparable, which mirrors the ministry truth.
   headline: {
-    pre: "A digital front door as alive as your worship,",
-    bold: "live in 14 days.",
+    pre: "More souls reached. More seats filled.",
+    bold: "Live in 14 days.",
   },
-  sub: "Tired of a church website that's broken on mobile & turning visitors away? We design, build, & manage modern, mobile-first ministry sites, with a free homepage preview in your inbox in 72 hours.",
+  sub: "Your worship is alive. Your preaching is anointed. Your website should match. We build modern, mobile-first ministry sites that turn Saturday-night searches into Wednesday-night faith — with a free homepage preview in 72 hours.",
   trust: [
     "Free preview in 72 hours",
     "No payment until you approve",
@@ -89,6 +92,10 @@ export const FOUNDER_STATS = [
 ];
 
 export const PAIN_POINTS = [
+  {
+    bold: "First-time visitors search for you Saturday night,",
+    rest: "& whatever they find decides whether they show up Sunday morning. Right now, what they find isn't doing your ministry justice.",
+  },
   {
     bold: "Your site looks 10+ years old",
     rest: "& it's broken on mobile, where 87% of first-time visitors actually find you.",
