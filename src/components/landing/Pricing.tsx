@@ -16,7 +16,7 @@ export const Pricing = () => {
             Stewardship-priced packages
           </p>
           <h2 className="mt-3 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-navy text-balance leading-tight">
-            Pick the package built for your ministry's size.
+            Built for established ministries ready to grow.
           </h2>
           <p className="mt-5 text-lg text-brand-navy-soft leading-relaxed">
             Flat-rate. No long-term contract. Money-back if your finished site
@@ -24,7 +24,7 @@ export const Pricing = () => {
           </p>
         </div>
 
-        <div className="mt-14 grid lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+        <div className="mt-14 grid sm:grid-cols-2 gap-6 lg:gap-8 items-stretch max-w-4xl mx-auto">
           {PRICING_TIERS.map((tier) => (
             <div
               key={tier.name}
