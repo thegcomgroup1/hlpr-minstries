@@ -2,6 +2,7 @@ import {
   CalendarCheck,
   HeartHandshake,
   MailOpen,
+  ShieldCheck,
   Target,
   TrendingUp,
   Users,
@@ -15,6 +16,7 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   "mail-open": MailOpen,
   users: Users,
   "calendar-check": CalendarCheck,
+  "shield-check": ShieldCheck,
 };
 
 // Reusable Track Record section. Currently unrendered on HLPR for Ministries
