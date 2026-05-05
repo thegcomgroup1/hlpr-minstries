@@ -85,8 +85,8 @@ export const Footer = () => {
                 Legal
               </p>
               <ul className="mt-4 space-y-2.5">
-                <li><a href="#" className="hover:text-brand-blue transition-colors">Privacy</a></li>
-                <li><a href="#" className="hover:text-brand-blue transition-colors">Terms</a></li>
+                <li><a href="/privacy" className="hover:text-brand-blue transition-colors">Privacy</a></li>
+                <li><a href="/terms" className="hover:text-brand-blue transition-colors">Terms</a></li>
               </ul>
             </div>
           </nav>
