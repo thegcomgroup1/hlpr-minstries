@@ -281,8 +281,9 @@ export const FOUNDER = {
   title: "Founder, HLPR",
   monogram: "T",
   story: [
-    "I started HLPR because I watched too many ministries with powerful messages get trapped behind tired websites. Their pastor would preach to thousands on Sunday, then lose every first-time visitor who looked them up on Wednesday. The agencies quoting $25K and four months were never going to solve it. The 'tech person at church' was burned out trying. Wix templates were never built for ministry.",
-    "HLPR is the answer I wish someone had given me twenty years ago when I sat in a pew wondering why our church's website looked nothing like our church. Modern. Mobile. Fully managed. At a price built for stewardship, not for agencies. Built for the kingdom, not for portfolios.",
+    "I've been in God's house for as long as I can remember. From ushering at small congregations to running production at mega-churches with dozens of campuses, I've seen ministry from every angle — & I've seen what a broken website does to a powerful Sunday service.",
+    "In 2019, I left the corporate world to build companies full-time. The last 7 years I've spent helping brands craft credible online presence & scale past 7 figures using proven digital marketing systems — the same systems I now bring to ministry.",
+    "In Scripture, the Holy Spirit is called our Helper — the One who walks with us, advocates for us, makes us victorious in the Christian life. That's what HLPR was named for. That's what we're called to be for ministries: a helper, a resource, a trusted hand for the work God has put in front of you.",
     "I'd be honored to build yours.",
   ],
   signature: "Tim Godson",
@@ -386,7 +387,7 @@ export const FAQS = [
   },
   {
     q: "What if we don't like the design? What if we want to leave later?",
-    a: "If you don't approve the homepage preview, you owe us nothing, ever. After launch, you're on a month-to-month plan — no contract. If you ever want to leave, we'll hand off your site files cleanly. We also offer a 100% money-back guarantee if your finished site doesn't reflect your ministry.",
+    a: "If you don't approve the homepage preview, you owe us nothing, ever. After launch, you're on a month-to-month plan — no contract. If you ever want to leave, we hand off your code, content, & domain — & walk your next team through everything. Clean exit, no hostage situations. We also offer a 100% money-back guarantee if your finished site doesn't reflect your ministry.",
   },
   {
     q: "Who runs HLPR? We've never heard of you.",
