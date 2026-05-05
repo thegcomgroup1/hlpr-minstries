@@ -7,7 +7,7 @@ export const BUSINESS = {
   tagline: "Church websites that breathe.",
   domain: "ministries.hlpr.io", // TODO_CONFIRM_SUBDOMAIN
   ctaUrl:
-    "https://links.hlpr.io/booking/TO8SkIKU2m4j6qJjvnA4/sv/69f0e238ea90ab5355db1852?utm_source=ministries-lp&utm_medium=cta&utm_campaign=organic",
+    "https://links.hlpr.io/widget/booking/gPnL2RU578xVCKw8faDS?utm_source=ministries-lp&utm_medium=cta&utm_campaign=organic",
   ctaLabel: "Get My Free Homepage Preview",
   riskReversal:
     "Free homepage preview in 72 hours. No payment until you approve. 100% money-back if your site doesn't reflect your ministry.",
