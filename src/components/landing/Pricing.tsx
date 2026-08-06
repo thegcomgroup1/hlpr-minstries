@@ -14,14 +14,14 @@ export const Pricing = () => {
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-xs sm:text-sm uppercase tracking-wider font-semibold text-brand-navy-soft">
-            Stewardship-priced packages
+            Simple, honest pricing
           </p>
           <h2 className="mt-3 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-navy text-balance leading-tight">
             Built for ministries ready to grow.
           </h2>
           <p className="mt-5 text-lg text-brand-navy-soft leading-relaxed">
-            Three flat-rate packages. No long-term contracts. Money-back if
-            your finished site doesn't reflect your ministry.
+            One monthly plan covers design, hosting, updates, and support. A
+            one-time setup fee covers the build. No contracts — cancel anytime.
           </p>
         </div>
 
