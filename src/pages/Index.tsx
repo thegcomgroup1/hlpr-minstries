@@ -12,7 +12,6 @@ import { FounderSection } from "@/components/landing/FounderSection";
 import { Pricing } from "@/components/landing/Pricing";
 import { FudStrip } from "@/components/landing/FudStrip";
 import { FinalCtaBand } from "@/components/landing/FinalCtaBand";
-import { CarePlans } from "@/components/landing/CarePlans";
 import { FAQ } from "@/components/landing/FAQ";
 import { Footer } from "@/components/landing/Footer";
 import { FAQS } from "@/lib/content";
@@ -106,7 +105,6 @@ const Index = () => {
         <Pricing />
         <FudStrip />
         <FinalCtaBand />
-        <CarePlans />
         <FAQ />
       </main>
       <Footer />
