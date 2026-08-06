@@ -5,14 +5,14 @@ export const BUSINESS = {
   name: "HLPR for Ministries",
   shortName: "HLPR",
   tagline: "Church websites that breathe.",
-  domain: "ministries.hlpr.io", // TODO_CONFIRM_SUBDOMAIN
+  domain: "ministries.hlpr.io",
   ctaUrl:
     "https://links.hlpr.io/widget/booking/gPnL2RU578xVCKw8faDS?utm_source=ministries-lp&utm_medium=cta&utm_campaign=organic",
-  ctaLabel: "Get My Free Homepage Preview",
+  ctaLabel: "See My Homepage Preview",
   riskReversal:
-    "Free homepage preview in 72 hours. No payment until you approve. 100% money-back if your site doesn't reflect your ministry.",
+    "We build your homepage first. You only pay if you want us to finish it.",
   riskReversalShort:
-    "Free preview in 72 hours · No payment until you approve · 100% money-back",
+    "Built before you pay · Live in 14 days · Cancel anytime",
 };
 
 export const NAV_LINKS = [
@@ -61,15 +61,11 @@ export const MINISTRY_PORTFOLIO = [
 export const HERO = {
   eyebrow: "For pastors, ministry leaders & creator-ministers",
   headline: {
-    pre: "Reach more souls. Grow your ministry.",
-    bold: "Live in 14 days.",
+    pre: "Your church's website is already built.",
+    bold: "Come see it.",
   },
-  sub: "Your message lands. Your community is growing. Your website should keep up. We build modern, mobile-first sites for ministries — local congregations, digital communities, and creator-pastors building reach across both — with a free custom homepage preview in 72 hours.",
-  trust: [
-    "Free preview in 72 hours",
-    "No payment until you approve",
-    "100% money-back",
-  ],
+  sub: "We build a real, custom homepage for your ministry before we ever ask you for anything — then walk you through it live so you can tell us what to change. Most churches see their site inside a week. No forms to fill out first. No templates to pick from.",
+  trust: ["Built before you commit", "Live in 14 days", "Cancel anytime"],
 };
 
 export const VENDOR_PARTNERS = [
@@ -101,7 +97,7 @@ export const PAIN_POINTS = [
     rest: "eight links, no story, no path forward, no way for a stranger to become a follower.",
   },
   {
-    bold: "You've outgrown your DIY Wix or Squarespace template,",
+    bold: "You've outgrown the DIY template you started with,",
     rest: "but a real rebuild feels like a four-month project you don't have time for.",
   },
   {
@@ -117,7 +113,7 @@ export const VALUE_PROPS = [
     title: "Ship in 14 days, not 4 months",
     body: "Most agencies quote 8-16 weeks for a proper ministry website. We deliver in 14 days from kickoff to live, without cutting corners on design, copy, or technical foundation. Fast enough to capture momentum while it's fresh, slow enough to do it right.",
     bullets: [
-      "72-hour free custom homepage preview",
+      "A real homepage built before your first call",
       "14-day average launch, end to end",
       "No 6-figure quote, no 4-month wait",
     ],
@@ -176,7 +172,7 @@ export const DIFFERENTIATOR = {
       ],
     },
     {
-      title: "DIY templates (Wix, Squarespace)",
+      title: "DIY website builders",
       tone: "negative",
       points: [
         "Generic, looks like every other small business",
@@ -189,10 +185,10 @@ export const DIFFERENTIATOR = {
       title: "The HLPR for Ministries way",
       tone: "positive",
       points: [
-        "Free homepage preview in 72 hours",
-        "Live in 14 days, fully managed forever",
+        "Your homepage is built before you pay anything",
+        "Live in 14 days, fully managed after that",
         "Built specifically for ministry workflows",
-        "Stewardship-priced & money-back guaranteed",
+        "Month-to-month — cancel anytime",
       ],
     },
   ],
@@ -201,30 +197,29 @@ export const DIFFERENTIATOR = {
 export const HOW_IT_WORKS = [
   {
     n: "01",
-    title: "Book your free homepage preview",
-    body: "20-minute call. We listen to your ministry, your congregation, your goals. No sales pressure, no obligation.",
+    title: "Book a 20-minute walkthrough",
+    body: "Pick a slot this week. Before the call, we research your ministry and design a real homepage for you. No forms, no questionnaires, no obligation.",
     timeframe: "Day 1",
   },
   {
     n: "02",
-    title: "We design your homepage in 72 hours",
-    body: "You get a real, fully-designed homepage preview in your inbox within 72 hours. If you love it, we build the full site. If you don't, you owe us nothing.",
-    timeframe: "Day 4",
+    title: "See your homepage, live on the call",
+    body: "We share our screen and walk you through the homepage we built for your ministry. You tell us what to change. If it's not right, you walk away and owe nothing.",
+    timeframe: "Day 1",
   },
   {
     n: "03",
     title: "Approve & launch in 14 days",
-    body: "Sermon library, plan-a-visit, giving, & all core pages live within 14 days of approval. We handle hosting, updates, & ongoing management forever.",
+    body: "Sermon library, plan-a-visit, giving, & all core pages live within 14 days of approval. We handle hosting, updates, & ongoing management — month-to-month, cancel anytime.",
     timeframe: "Day 14",
   },
 ];
 
 export const FOUNDING_PARTNER = {
-  badge: "Founding Partner Program",
-  headline:
-    "We're hand-picking our first 5 ministry partners.",
-  body: "Founding-rate pricing locked in for life, plus direct text access to me throughout the build.",
-  spots: "5 spots remaining.",
+  badge: "How we work",
+  headline: "We build first, then we talk.",
+  body: "Every ministry that books a call gets a real, custom homepage designed before we ever meet — and direct text access to me throughout the build.",
+  spots: "",
 };
 
 export const FOUNDER_TRACK_RECORD = {
@@ -258,14 +253,14 @@ export const FOUNDER_TRACK_RECORD = {
     },
     {
       icon: "users",
-      stat: "5",
-      context: "Founding ministry partners we're hand-picking before public launch — founding-rate pricing locked in for life",
-      tag: "Founding Partners",
+      stat: "$0",
+      context: "What you spend to see your ministry's homepage designed, built, and walked through live",
+      tag: "Upfront Risk",
     },
     {
       icon: "shield-check",
       stat: "100%",
-      context: "Money-back guarantee if your finished site doesn't reflect your ministry — no hostage situations, no fine print",
+      context: "Month-to-month. Cancel anytime, and we hand off your code, content, & domain — no hostage situations, no fine print",
       tag: "Stewardship",
     },
   ],
@@ -290,11 +285,11 @@ export const FOUNDER = {
 export const PRICING_TIERS = [
   {
     name: "Foundation",
-    target: "For ministries finding their footing — newer congregations, growing podcasts, emerging creator-pastors, parachurch operations",
-    anchorPrice: "$3,500",
-    price: "$1,500",
-    cadence: "build + $50/mo",
-    savings: "Save $2,000",
+    target: "For ministries finding their footing — newer congregations, growing podcasts, emerging creator-pastors",
+    anchorPrice: "",
+    price: "$49.99",
+    cadence: "per month + $500 one-time setup",
+    savings: "",
     mostPopular: false,
     features: [
       "Up to 5 fully-designed, fully-responsive pages",
@@ -302,35 +297,35 @@ export const PRICING_TIERS = [
       "Sermon, episode, or content library (YouTube / Vimeo / podcast feed)",
       "Plan-Your-Visit or contact form connected to your CRM",
       "One-tap giving (Tithe.ly, Pushpay, Givelify, or Stripe)",
-      "Hosting + monthly security updates",
+      "Hosting, security updates & content edits",
       "Email support (48h response)",
     ],
   },
   {
     name: "Growth",
-    target: "For established ministries with momentum to amplify — 500+ congregations, 10K+ podcast listeners, or 50K+ social audiences",
-    anchorPrice: "$5,000",
-    price: "$2,500",
-    cadence: "build + $200/mo",
-    savings: "Save $2,500",
+    target: "For churches building their presence — established congregations, 10K+ podcast listeners, or 50K+ social audiences",
+    anchorPrice: "",
+    price: "$249.99",
+    cadence: "per month + $750 one-time setup",
+    savings: "",
     mostPopular: true,
     features: [
       "Everything in Foundation, plus:",
       "Up to 10 pages (ministries, staff, events, blog, episode archive)",
+      "8 custom graphics per month (sermon series, events, socials)",
       "Advanced integrations (live stream, podcast feed, member tools)",
       "Searchable sermon or episode archive by topic, series, & scripture",
-      "Online giving or member portal + newsletter automation",
       "Full SEO setup + monthly analytics & recommendations call",
       "Priority support (24h response)",
     ],
   },
   {
     name: "Established",
-    target: "For large-reach ministries — multi-campus congregations, top-tier creator-pastors, multi-platform digital-first organizations",
+    target: "For large-reach ministries — multi-campus congregations, top-tier creator-pastors, multi-platform organizations",
     anchorPrice: "",
-    price: "From $5,000",
-    cadence: "tailored quote — pricing scales with scope",
-    savings: "Founding-partner pricing locked in",
+    price: "$449.99",
+    cadence: "per month + $1,500 one-time setup",
+    savings: "",
     mostPopular: false,
     features: [
       "Everything in Growth, plus:",
@@ -339,24 +334,26 @@ export const PRICING_TIERS = [
       "Custom integrations (Planning Center, CCB, Patreon, Circle, Tithe.ly, Pushpay)",
       "Dedicated account manager",
       "Quarterly strategy sessions",
-      "Direct text access to the founder throughout the build",
+      "Direct text access to the founder",
     ],
   },
 ];
 
+export const PRICING_TERMS =
+  "All plans month-to-month. Cancel anytime. One-time setup covers design, build, content migration, & launch.";
+
 export const PRICING_CROSSSELL =
-  "After your site is live, we also offer email marketing retainers (Bronze, Silver, Gold) for ministries ready to grow their audience digitally. Ask about it on your free homepage preview call.";
+  "After your site is live, we also offer email marketing retainers for ministries ready to grow their audience digitally. Ask about it on your walkthrough call.";
 
 export const FUD_ITEMS = [
-  { icon: "gift", label: "Free homepage preview" },
+  { icon: "gift", label: "Homepage built before you pay" },
   { icon: "message-circle", label: "Direct founder access" },
   { icon: "sparkles", label: "Custom to your ministry" },
-  { icon: "unlock", label: "No long-term contract" },
+  { icon: "unlock", label: "Month-to-month, cancel anytime" },
 ];
 
 export const FINAL_CTA = {
-  headline:
-    "Reach more souls. Grow your ministry. Live in 14 days.",
+  headline: "Your homepage is already built. Come see it.",
   sub: BUSINESS.riskReversal,
 };
 
@@ -379,15 +376,15 @@ export const FAQS = [
   },
   {
     q: "I have a strong social following but no website yet. Where do we start?",
-    a: "Start exactly where you are. A growing audience without a real website is leaving impact on the table — every casual listener you can't convert into a follower, supporter, or member is a soul whose engagement plateaus. We start with a 20-minute kickoff call to understand your audience, your message, and your offer; design a custom homepage preview within 72 hours; and have your full site live within 14 days. From Linktree to legitimate, faster than you'd expect.",
+    a: "Start exactly where you are. A growing audience without a real website is leaving impact on the table — every casual listener you can't convert into a follower, supporter, or member is a soul whose engagement plateaus. Book the call and we'll have a custom homepage built for your ministry waiting on the screen. Approve it and your full site is live within 14 days. From Linktree to legitimate, faster than you'd expect.",
   },
   {
-    q: "How is this different from Sharefaith, Wix, or hiring a freelancer?",
-    a: "Sharefaith & Ekklesia360 lock you into their templates. Wix & Squarespace look generic & weren't built for ministry workflows. Freelancers ghost. We design custom, build for ministry-specific needs (sermons, episodes, giving, plan-a-visit, member portals), launch in 14 days, & manage everything ongoing — all at a stewardship-priced flat rate.",
+    q: "How is this different from a DIY website builder or hiring a freelancer?",
+    a: "Website builders hand you a template and a to-do list — you're still the one designing, fixing, and maintaining it. Freelancers disappear after launch. We design custom, build for ministry-specific needs (sermons, episodes, giving, plan-a-visit, member portals), launch in 14 days, & manage everything ongoing for a flat monthly rate. And you see the work before you commit to any of it.",
   },
   {
     q: "Can you really launch a full ministry website in 14 days?",
-    a: "Yes. We deliver a free homepage preview in 72 hours. Once you approve, the full site (5-10 pages, sermon or episode library, giving, plan-a-visit, hosting) is live within 14 days. We've built the entire production process around this timeline.",
+    a: "Yes. Your homepage is already built when you show up to the call. Once you approve, the full site (5-10 pages, sermon or episode library, giving, plan-a-visit, hosting) is live within 14 days. We've built the entire production process around this timeline.",
   },
   {
     q: "How much work is required from our team?",
@@ -395,11 +392,11 @@ export const FAQS = [
   },
   {
     q: "What if we don't like the design? What if we want to leave later?",
-    a: "If you don't approve the homepage preview, you owe us nothing, ever. After launch, you're on a month-to-month plan — no contract. If you ever want to leave, we hand off your code, content, & domain — & walk your next team through everything. Clean exit, no hostage situations. We also offer a 100% money-back guarantee if your finished site doesn't reflect your ministry.",
+    a: "You see the homepage before you pay anything, so you're never buying blind. After launch you're month-to-month — no contract, cancel anytime. If you ever want to leave, we hand off your code, content, & domain, & walk your next team through everything. Clean exit, no hostage situations.",
   },
   {
     q: "Who runs HLPR? We've never heard of you.",
-    a: "HLPR is led by Tim Godson, who's managed over $1.2M in paid traffic across Google & Meta and generated $170K+ in direct client revenue across the last 5 years. The same systems that grew those businesses now power our ministry sites. HLPR for Ministries is a new offering, & we're hand-picking our first 5 partners with founding-rate pricing locked in for life. You'll work directly with Tim throughout the build.",
+    a: "HLPR is led by Tim Godson, who's managed over $1.2M in paid traffic across Google & Meta and generated $170K+ in direct client revenue across the last 5 years. The same systems that grew those businesses now power our ministry sites. You'll work directly with Tim throughout the build — and you'll see the work before you spend a dollar, which is the only introduction that really matters.",
   },
   {
     q: "How does onboarding work? Who hosts the site? What happens to our existing content?",
@@ -407,6 +404,6 @@ export const FAQS = [
   },
   {
     q: "What happens after I book my free homepage preview?",
-    a: "You'll get a calendar link to pick a 20-minute slot this week. On the call, we listen to your ministry & ask the questions we need to design your homepage. Within 72 hours, your custom homepage preview lands in your inbox. From there, you decide. No pressure, no payment until you approve.",
+    a: "You'll get a calendar link to pick a 20-minute slot this week. On that call we walk you through the homepage we've already built for your ministry, live on screen, and you tell us what to change. If you want us to finish it, we launch within 14 days. If not, you walk away and owe nothing.",
   },
 ];

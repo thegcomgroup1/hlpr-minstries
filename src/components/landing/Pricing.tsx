@@ -2,6 +2,7 @@ import { Check, Star } from "lucide-react";
 import {
   BUSINESS,
   PRICING_TIERS,
+  PRICING_TERMS,
   PRICING_CROSSSELL,
 } from "@/lib/content";
 import { CtaButton } from "./CtaButton";
@@ -13,14 +14,14 @@ export const Pricing = () => {
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-xs sm:text-sm uppercase tracking-wider font-semibold text-brand-navy-soft">
-            Stewardship-priced packages
+            Simple, honest pricing
           </p>
           <h2 className="mt-3 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-navy text-balance leading-tight">
             Built for ministries ready to grow.
           </h2>
           <p className="mt-5 text-lg text-brand-navy-soft leading-relaxed">
-            Three flat-rate packages. No long-term contracts. Money-back if
-            your finished site doesn't reflect your ministry.
+            One monthly plan covers design, hosting, updates, and support. A
+            one-time setup fee covers the build. No contracts — cancel anytime.
           </p>
         </div>
 
@@ -37,7 +38,7 @@ export const Pricing = () => {
               {tier.mostPopular && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1.5 rounded-full bg-brand-navy px-3 py-1 text-xs font-semibold text-brand-navy-foreground">
                   <Star className="h-3 w-3 fill-brand-amber text-brand-amber" aria-hidden />
-                  Most Popular
+                  Recommended
                 </div>
               )}
 
@@ -84,14 +85,18 @@ export const Pricing = () => {
                   className="w-full"
                 />
                 <p className="mt-3 text-center text-xs text-brand-navy-soft">
-                  Free preview · No payment until you approve
+                  See your homepage first · Cancel anytime
                 </p>
               </div>
             </div>
           ))}
         </div>
 
-        <p className="mt-10 max-w-3xl mx-auto text-center text-sm text-brand-navy-soft leading-relaxed">
+        <p className="mt-10 max-w-3xl mx-auto text-center text-sm font-medium text-brand-navy">
+          {PRICING_TERMS}
+        </p>
+
+        <p className="mt-4 max-w-3xl mx-auto text-center text-sm text-brand-navy-soft leading-relaxed">
           {PRICING_CROSSSELL}
         </p>
       </div>

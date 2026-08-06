@@ -39,9 +39,11 @@ export const MinistryPortfolio = () => {
                 </span>
               </h3>
             </div>
-            <div className="flex-shrink-0 font-serif text-base font-bold text-brand-navy">
-              {FOUNDING_PARTNER.spots}
-            </div>
+            {FOUNDING_PARTNER.spots && (
+              <div className="flex-shrink-0 font-serif text-base font-bold text-brand-navy">
+                {FOUNDING_PARTNER.spots}
+              </div>
+            )}
           </div>
         </div>
 

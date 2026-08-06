@@ -4,9 +4,9 @@ import { CtaButton } from "./CtaButton";
 
 export const RiskReversalStrip = () => {
   const items = [
-    { icon: Clock, label: "Free preview in 72 hours" },
-    { icon: CreditCard, label: "No payment until you approve" },
-    { icon: ShieldCheck, label: "100% money-back guarantee" },
+    { icon: Clock, label: "Your homepage is built before you pay" },
+    { icon: CreditCard, label: "Live in 14 days from approval" },
+    { icon: ShieldCheck, label: "Month-to-month — cancel anytime" },
   ];
 
   return (
@@ -21,7 +21,7 @@ export const RiskReversalStrip = () => {
               Our promise to your ministry
             </p>
             <h2 className="mt-3 font-serif text-3xl sm:text-4xl font-bold text-balance leading-tight">
-              Zero risk. Zero pressure. Zero excuses.
+              We build first. You decide second.
             </h2>
             <ul className="mt-6 grid sm:grid-cols-3 gap-4">
               {items.map(({ icon: Icon, label }) => (

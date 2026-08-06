@@ -12,7 +12,6 @@ import { FounderSection } from "@/components/landing/FounderSection";
 import { Pricing } from "@/components/landing/Pricing";
 import { FudStrip } from "@/components/landing/FudStrip";
 import { FinalCtaBand } from "@/components/landing/FinalCtaBand";
-import { CarePlans } from "@/components/landing/CarePlans";
 import { FAQ } from "@/components/landing/FAQ";
 import { Footer } from "@/components/landing/Footer";
 import { FAQS } from "@/lib/content";
@@ -54,9 +53,9 @@ const serviceJsonLd = {
     audienceType: "Pastors, ministry leaders, and creator-ministers",
   },
   offers: [
-    { "@type": "Offer", name: "Foundation", price: "1500", priceCurrency: "USD" },
-    { "@type": "Offer", name: "Growth", price: "199", priceCurrency: "USD" },
-    { "@type": "Offer", name: "Established", price: "5000", priceCurrency: "USD" },
+    { "@type": "Offer", name: "Foundation", price: "500", priceCurrency: "USD" },
+    { "@type": "Offer", name: "Growth", price: "750", priceCurrency: "USD" },
+    { "@type": "Offer", name: "Established", price: "1500", priceCurrency: "USD" },
   ],
 };
 
@@ -67,13 +66,13 @@ const Index = () => {
         <title>HLPR Ministries — Custom Websites for Ministries</title>
         <meta
           name="description"
-          content="Custom websites for churches, podcasts, and digital ministries. Free 72-hour homepage preview, live in 14 days. No payment until you approve."
+          content="We build your church website's homepage before you pay anything. See it live on a 20-minute call, launch in 14 days, cancel anytime."
         />
         <link rel="canonical" href="https://ministries.hlpr.io/" />
         <meta property="og:title" content="HLPR Ministries — Custom Websites for Ministries" />
         <meta
           property="og:description"
-          content="Custom websites for churches, podcasts, and digital ministries. Free 72-hour homepage preview, live in 14 days. No payment until you approve."
+          content="We build your church website's homepage before you pay anything. See it live on a 20-minute call, launch in 14 days, cancel anytime."
         />
         <meta property="og:url" content="https://ministries.hlpr.io/" />
         <meta property="og:type" content="website" />
@@ -85,7 +84,7 @@ const Index = () => {
         <meta name="twitter:title" content="HLPR Ministries — Custom Websites for Ministries" />
         <meta
           name="twitter:description"
-          content="Custom websites for churches, podcasts, and digital ministries. Live in 14 days. No payment until you approve."
+          content="Your ministry's homepage, built before you pay. Live in 14 days. Cancel anytime."
         />
         <meta name="twitter:image" content={OG_IMAGE} />
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
@@ -106,7 +105,6 @@ const Index = () => {
         <Pricing />
         <FudStrip />
         <FinalCtaBand />
-        <CarePlans />
         <FAQ />
       </main>
       <Footer />
