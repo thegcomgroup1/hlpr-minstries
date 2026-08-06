@@ -47,7 +47,7 @@ export const FAQ = () => {
             Still have questions?
           </p>
           <p className="mt-2 text-base text-brand-navy-soft">
-            Bring them to your free homepage preview call. No obligation.
+            Bring them to your walkthrough call. No obligation.
           </p>
           <div className="mt-6 inline-flex flex-col items-center gap-3">
             <CtaButton href={BUSINESS.ctaUrl} label={BUSINESS.ctaLabel} size="lg" />
