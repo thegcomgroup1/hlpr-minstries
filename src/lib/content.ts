@@ -375,7 +375,7 @@ export const FAQS = [
   },
   {
     q: "I have a strong social following but no website yet. Where do we start?",
-    a: "Start exactly where you are. A growing audience without a real website is leaving impact on the table — every casual listener you can't convert into a follower, supporter, or member is a soul whose engagement plateaus. We start with a 20-minute kickoff call to understand your audience, your message, and your offer; design a custom homepage preview within 72 hours; and have your full site live within 14 days. From Linktree to legitimate, faster than you'd expect.",
+    a: "Start exactly where you are. A growing audience without a real website is leaving impact on the table — every casual listener you can't convert into a follower, supporter, or member is a soul whose engagement plateaus. Book the call and we'll have a custom homepage built for your ministry waiting on the screen. Approve it and your full site is live within 14 days. From Linktree to legitimate, faster than you'd expect.",
   },
   {
     q: "How is this different from a DIY website builder or hiring a freelancer?",
