@@ -340,19 +340,21 @@ export const PRICING_TIERS = [
   },
 ];
 
+export const PRICING_TERMS =
+  "All plans month-to-month. Cancel anytime. One-time setup covers design, build, content migration, & launch.";
+
 export const PRICING_CROSSSELL =
-  "After your site is live, we also offer email marketing retainers (Bronze, Silver, Gold) for ministries ready to grow their audience digitally. Ask about it on your free homepage preview call.";
+  "After your site is live, we also offer email marketing retainers for ministries ready to grow their audience digitally. Ask about it on your walkthrough call.";
 
 export const FUD_ITEMS = [
-  { icon: "gift", label: "Free homepage preview" },
+  { icon: "gift", label: "Homepage built before you pay" },
   { icon: "message-circle", label: "Direct founder access" },
   { icon: "sparkles", label: "Custom to your ministry" },
-  { icon: "unlock", label: "No long-term contract" },
+  { icon: "unlock", label: "Month-to-month, cancel anytime" },
 ];
 
 export const FINAL_CTA = {
-  headline:
-    "Reach more souls. Grow your ministry. Live in 14 days.",
+  headline: "Your homepage is already built. Come see it.",
   sub: BUSINESS.riskReversal,
 };
 
