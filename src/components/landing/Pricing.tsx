@@ -2,6 +2,7 @@ import { Check, Star } from "lucide-react";
 import {
   BUSINESS,
   PRICING_TIERS,
+  PRICING_TERMS,
   PRICING_CROSSSELL,
 } from "@/lib/content";
 import { CtaButton } from "./CtaButton";
