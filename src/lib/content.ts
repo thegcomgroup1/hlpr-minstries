@@ -395,7 +395,7 @@ export const FAQS = [
   },
   {
     q: "Who runs HLPR? We've never heard of you.",
-    a: "HLPR is led by Tim Godson, who's managed over $1.2M in paid traffic across Google & Meta and generated $170K+ in direct client revenue across the last 5 years. The same systems that grew those businesses now power our ministry sites. HLPR for Ministries is a new offering, & we're hand-picking our first 5 partners with founding-rate pricing locked in for life. You'll work directly with Tim throughout the build.",
+    a: "HLPR is led by Tim Godson, who's managed over $1.2M in paid traffic across Google & Meta and generated $170K+ in direct client revenue across the last 5 years. The same systems that grew those businesses now power our ministry sites. You'll work directly with Tim throughout the build — and you'll see the work before you spend a dollar, which is the only introduction that really matters.",
   },
   {
     q: "How does onboarding work? Who hosts the site? What happens to our existing content?",
