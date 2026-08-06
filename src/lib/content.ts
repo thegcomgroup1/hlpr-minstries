@@ -113,7 +113,7 @@ export const VALUE_PROPS = [
     title: "Ship in 14 days, not 4 months",
     body: "Most agencies quote 8-16 weeks for a proper ministry website. We deliver in 14 days from kickoff to live, without cutting corners on design, copy, or technical foundation. Fast enough to capture momentum while it's fresh, slow enough to do it right.",
     bullets: [
-      "72-hour free custom homepage preview",
+      "A real homepage built before your first call",
       "14-day average launch, end to end",
       "No 6-figure quote, no 4-month wait",
     ],
