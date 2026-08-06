@@ -97,7 +97,7 @@ export const PAIN_POINTS = [
     rest: "eight links, no story, no path forward, no way for a stranger to become a follower.",
   },
   {
-    bold: "You've outgrown your DIY Wix or Squarespace template,",
+    bold: "You've outgrown the DIY template you started with,",
     rest: "but a real rebuild feels like a four-month project you don't have time for.",
   },
   {
