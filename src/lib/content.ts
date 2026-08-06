@@ -61,15 +61,11 @@ export const MINISTRY_PORTFOLIO = [
 export const HERO = {
   eyebrow: "For pastors, ministry leaders & creator-ministers",
   headline: {
-    pre: "Reach more souls. Grow your ministry.",
-    bold: "Live in 14 days.",
+    pre: "Your church's website is already built.",
+    bold: "Come see it.",
   },
-  sub: "Your message lands. Your community is growing. Your website should keep up. We build modern, mobile-first sites for ministries — local congregations, digital communities, and creator-pastors building reach across both — with a free custom homepage preview in 72 hours.",
-  trust: [
-    "Free preview in 72 hours",
-    "No payment until you approve",
-    "100% money-back",
-  ],
+  sub: "We build a real, custom homepage for your ministry before we ever ask you for anything — then walk you through it live so you can tell us what to change. Most churches see their site inside a week. No forms to fill out first. No templates to pick from.",
+  trust: ["Built before you commit", "Live in 14 days", "Cancel anytime"],
 };
 
 export const VENDOR_PARTNERS = [
