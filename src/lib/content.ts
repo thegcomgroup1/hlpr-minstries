@@ -403,6 +403,6 @@ export const FAQS = [
   },
   {
     q: "What happens after I book my free homepage preview?",
-    a: "You'll get a calendar link to pick a 20-minute slot this week. On the call, we listen to your ministry & ask the questions we need to design your homepage. Within 72 hours, your custom homepage preview lands in your inbox. From there, you decide. No pressure, no payment until you approve.",
+    a: "You'll get a calendar link to pick a 20-minute slot this week. On that call we walk you through the homepage we've already built for your ministry, live on screen, and you tell us what to change. If you want us to finish it, we launch within 14 days. If not, you walk away and owe nothing.",
   },
 ];
