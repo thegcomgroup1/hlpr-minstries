@@ -254,14 +254,14 @@ export const FOUNDER_TRACK_RECORD = {
     },
     {
       icon: "users",
-      stat: "5",
-      context: "Founding ministry partners we're hand-picking before public launch — founding-rate pricing locked in for life",
-      tag: "Founding Partners",
+      stat: "$0",
+      context: "What you spend to see your ministry's homepage designed, built, and walked through live",
+      tag: "Upfront Risk",
     },
     {
       icon: "shield-check",
       stat: "100%",
-      context: "Money-back guarantee if your finished site doesn't reflect your ministry — no hostage situations, no fine print",
+      context: "Month-to-month. Cancel anytime, and we hand off your code, content, & domain — no hostage situations, no fine print",
       tag: "Stewardship",
     },
   ],
