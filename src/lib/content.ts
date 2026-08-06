@@ -378,8 +378,8 @@ export const FAQS = [
     a: "Start exactly where you are. A growing audience without a real website is leaving impact on the table — every casual listener you can't convert into a follower, supporter, or member is a soul whose engagement plateaus. We start with a 20-minute kickoff call to understand your audience, your message, and your offer; design a custom homepage preview within 72 hours; and have your full site live within 14 days. From Linktree to legitimate, faster than you'd expect.",
   },
   {
-    q: "How is this different from Sharefaith, Wix, or hiring a freelancer?",
-    a: "Sharefaith & Ekklesia360 lock you into their templates. Wix & Squarespace look generic & weren't built for ministry workflows. Freelancers ghost. We design custom, build for ministry-specific needs (sermons, episodes, giving, plan-a-visit, member portals), launch in 14 days, & manage everything ongoing — all at a stewardship-priced flat rate.",
+    q: "How is this different from a DIY website builder or hiring a freelancer?",
+    a: "Website builders hand you a template and a to-do list — you're still the one designing, fixing, and maintaining it. Freelancers disappear after launch. We design custom, build for ministry-specific needs (sermons, episodes, giving, plan-a-visit, member portals), launch in 14 days, & manage everything ongoing for a flat monthly rate. And you see the work before you commit to any of it.",
   },
   {
     q: "Can you really launch a full ministry website in 14 days?",
