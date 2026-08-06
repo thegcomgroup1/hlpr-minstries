@@ -5,14 +5,14 @@ export const BUSINESS = {
   name: "HLPR for Ministries",
   shortName: "HLPR",
   tagline: "Church websites that breathe.",
-  domain: "ministries.hlpr.io", // TODO_CONFIRM_SUBDOMAIN
+  domain: "ministries.hlpr.io",
   ctaUrl:
     "https://links.hlpr.io/widget/booking/gPnL2RU578xVCKw8faDS?utm_source=ministries-lp&utm_medium=cta&utm_campaign=organic",
-  ctaLabel: "Get My Free Homepage Preview",
+  ctaLabel: "See My Homepage Preview",
   riskReversal:
-    "Free homepage preview in 72 hours. No payment until you approve. 100% money-back if your site doesn't reflect your ministry.",
+    "We build your homepage first. You only pay if you want us to finish it.",
   riskReversalShort:
-    "Free preview in 72 hours · No payment until you approve · 100% money-back",
+    "Built before you pay · Live in 14 days · Cancel anytime",
 };
 
 export const NAV_LINKS = [
