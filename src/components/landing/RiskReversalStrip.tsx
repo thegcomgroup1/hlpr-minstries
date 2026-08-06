@@ -21,7 +21,7 @@ export const RiskReversalStrip = () => {
               Our promise to your ministry
             </p>
             <h2 className="mt-3 font-serif text-3xl sm:text-4xl font-bold text-balance leading-tight">
-              Zero risk. Zero pressure. Zero excuses.
+              We build first. You decide second.
             </h2>
             <ul className="mt-6 grid sm:grid-cols-3 gap-4">
               {items.map(({ icon: Icon, label }) => (
