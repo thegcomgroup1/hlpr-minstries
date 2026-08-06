@@ -172,7 +172,7 @@ export const DIFFERENTIATOR = {
       ],
     },
     {
-      title: "DIY templates (Wix, Squarespace)",
+      title: "DIY website builders",
       tone: "negative",
       points: [
         "Generic, looks like every other small business",
@@ -185,10 +185,10 @@ export const DIFFERENTIATOR = {
       title: "The HLPR for Ministries way",
       tone: "positive",
       points: [
-        "Free homepage preview in 72 hours",
-        "Live in 14 days, fully managed forever",
+        "Your homepage is built before you pay anything",
+        "Live in 14 days, fully managed after that",
         "Built specifically for ministry workflows",
-        "Stewardship-priced & money-back guaranteed",
+        "Month-to-month — cancel anytime",
       ],
     },
   ],
