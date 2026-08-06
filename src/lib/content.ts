@@ -197,30 +197,29 @@ export const DIFFERENTIATOR = {
 export const HOW_IT_WORKS = [
   {
     n: "01",
-    title: "Book your free homepage preview",
-    body: "20-minute call. We listen to your ministry, your congregation, your goals. No sales pressure, no obligation.",
+    title: "Book a 20-minute walkthrough",
+    body: "Pick a slot this week. Before the call, we research your ministry and design a real homepage for you. No forms, no questionnaires, no obligation.",
     timeframe: "Day 1",
   },
   {
     n: "02",
-    title: "We design your homepage in 72 hours",
-    body: "You get a real, fully-designed homepage preview in your inbox within 72 hours. If you love it, we build the full site. If you don't, you owe us nothing.",
-    timeframe: "Day 4",
+    title: "See your homepage, live on the call",
+    body: "We share our screen and walk you through the homepage we built for your ministry. You tell us what to change. If it's not right, you walk away and owe nothing.",
+    timeframe: "Day 1",
   },
   {
     n: "03",
     title: "Approve & launch in 14 days",
-    body: "Sermon library, plan-a-visit, giving, & all core pages live within 14 days of approval. We handle hosting, updates, & ongoing management forever.",
+    body: "Sermon library, plan-a-visit, giving, & all core pages live within 14 days of approval. We handle hosting, updates, & ongoing management — month-to-month, cancel anytime.",
     timeframe: "Day 14",
   },
 ];
 
 export const FOUNDING_PARTNER = {
-  badge: "Founding Partner Program",
-  headline:
-    "We're hand-picking our first 5 ministry partners.",
-  body: "Founding-rate pricing locked in for life, plus direct text access to me throughout the build.",
-  spots: "5 spots remaining.",
+  badge: "How we work",
+  headline: "We build first, then we talk.",
+  body: "Every ministry that books a call gets a real, custom homepage designed before we ever meet — and direct text access to me throughout the build.",
+  spots: "",
 };
 
 export const FOUNDER_TRACK_RECORD = {
