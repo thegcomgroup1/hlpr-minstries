@@ -38,7 +38,7 @@ export const Pricing = () => {
               {tier.mostPopular && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1.5 rounded-full bg-brand-navy px-3 py-1 text-xs font-semibold text-brand-navy-foreground">
                   <Star className="h-3 w-3 fill-brand-amber text-brand-amber" aria-hidden />
-                  Most Popular
+                  Recommended
                 </div>
               )}
 
