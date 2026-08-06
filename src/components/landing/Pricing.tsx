@@ -85,14 +85,18 @@ export const Pricing = () => {
                   className="w-full"
                 />
                 <p className="mt-3 text-center text-xs text-brand-navy-soft">
-                  Free preview · No payment until you approve
+                  See your homepage first · Cancel anytime
                 </p>
               </div>
             </div>
           ))}
         </div>
 
-        <p className="mt-10 max-w-3xl mx-auto text-center text-sm text-brand-navy-soft leading-relaxed">
+        <p className="mt-10 max-w-3xl mx-auto text-center text-sm font-medium text-brand-navy">
+          {PRICING_TERMS}
+        </p>
+
+        <p className="mt-4 max-w-3xl mx-auto text-center text-sm text-brand-navy-soft leading-relaxed">
           {PRICING_CROSSSELL}
         </p>
       </div>
