@@ -391,7 +391,7 @@ export const FAQS = [
   },
   {
     q: "What if we don't like the design? What if we want to leave later?",
-    a: "If you don't approve the homepage preview, you owe us nothing, ever. After launch, you're on a month-to-month plan — no contract. If you ever want to leave, we hand off your code, content, & domain — & walk your next team through everything. Clean exit, no hostage situations. We also offer a 100% money-back guarantee if your finished site doesn't reflect your ministry.",
+    a: "You see the homepage before you pay anything, so you're never buying blind. After launch you're month-to-month — no contract, cancel anytime. If you ever want to leave, we hand off your code, content, & domain, & walk your next team through everything. Clean exit, no hostage situations.",
   },
   {
     q: "Who runs HLPR? We've never heard of you.",
