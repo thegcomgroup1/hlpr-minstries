@@ -54,9 +54,9 @@ const serviceJsonLd = {
     audienceType: "Pastors, ministry leaders, and creator-ministers",
   },
   offers: [
-    { "@type": "Offer", name: "Foundation", price: "1500", priceCurrency: "USD" },
-    { "@type": "Offer", name: "Growth", price: "199", priceCurrency: "USD" },
-    { "@type": "Offer", name: "Established", price: "5000", priceCurrency: "USD" },
+    { "@type": "Offer", name: "Foundation", price: "500", priceCurrency: "USD" },
+    { "@type": "Offer", name: "Growth", price: "750", priceCurrency: "USD" },
+    { "@type": "Offer", name: "Established", price: "1500", priceCurrency: "USD" },
   ],
 };
 
