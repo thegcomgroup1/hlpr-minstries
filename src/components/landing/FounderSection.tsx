@@ -1,4 +1,4 @@
-import { Instagram } from "lucide-react";
+
 import { FOUNDER, BUSINESS } from "@/lib/content";
 import founderHeadshot from "@/assets/founder-headshot.png";
 
