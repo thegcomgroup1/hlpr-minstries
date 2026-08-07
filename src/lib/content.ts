@@ -382,7 +382,7 @@ export const FAQS = [
   },
   {
     q: "Can you really launch a full ministry website in 14 days?",
-    a: "Yes. Your homepage is already built when you show up to the call. Once you approve, the full site (5-10 pages, sermon or episode library, giving, plan-a-visit, hosting) is live within 14 days. We've built the entire production process around this timeline.",
+    a: "Yes. Your homepage is already built when you show up to the call. Once you approve, your full site is live within 14 days — every page, your sermon library, giving, and plan-a-visit, all hosted and managed. We've built the entire production process around this timeline.",
   },
   {
     q: "How much work is required from our team?",
