@@ -223,9 +223,8 @@ export const FOUNDING_PARTNER = {
 };
 
 export const FOUNDER_TRACK_RECORD = {
-  heading:
-    "Our church client testimonials are still coming in. Here's what's already in our hands.",
-  sub: "HLPR for Ministries is new. The team behind it isn't. These are real numbers from real client work across the last 5 years — the same systems we now bring to ministry.",
+  heading: "The numbers behind the work.",
+  sub: "Real results from real client work across the last 5 years — the same systems now serving ministries.",
   cards: [
     {
       icon: "trending-up",
@@ -278,69 +277,68 @@ export const FOUNDER = {
     "I'd be honored to build yours.",
   ],
   signature: "Tim Godson",
-  // TODO_MISSING_INPUT: founder Instagram handle — replace [MY_HANDLE] in the URL below
-  instagramUrl: "https://instagram.com/[MY_HANDLE]",
 };
 
 export const PRICING_TIERS = [
   {
     name: "Foundation",
-    target: "For ministries finding their footing — newer congregations, growing podcasts, emerging creator-pastors",
+    target: "We run your website.",
     anchorPrice: "",
-    price: "$49.99",
-    cadence: "per month + $500 one-time setup",
+    price: "$57",
+    cadence: "per month + $500 one-time build",
     savings: "",
     mostPopular: false,
     features: [
-      "Up to 5 fully-designed, fully-responsive pages",
-      "Mobile-first custom design (no templates)",
-      "Sermon, episode, or content library (YouTube / Vimeo / podcast feed)",
-      "Plan-Your-Visit or contact form connected to your CRM",
-      "One-tap giving (Tithe.ly, Pushpay, Givelify, or Stripe)",
-      "Hosting, security updates & content edits",
-      "Email support (48h response)",
+      "A custom site built around your ministry, not a template",
+      "Mobile-first, because that's where your visitors are",
+      "Service times, location, and a plan-your-visit form that reaches your inbox",
+      "One-tap giving connected to whatever platform you already use",
+      "Secure hosting, SSL, daily backups, and security patching",
+      "Unlimited content updates, done within one business day",
+      "Search setup so your ministry is findable by name",
     ],
   },
   {
     name: "Growth",
-    target: "For churches building their presence — established congregations, 10K+ podcast listeners, or 50K+ social audiences",
+    target: "We run your website and your social.",
     anchorPrice: "",
-    price: "$249.99",
-    cadence: "per month + $750 one-time setup",
+    price: "$147",
+    cadence: "per month + $750 one-time build",
     savings: "",
     mostPopular: true,
     features: [
       "Everything in Foundation, plus:",
-      "Up to 10 pages (ministries, staff, events, blog, episode archive)",
-      "8 custom graphics per month (sermon series, events, socials)",
-      "Advanced integrations (live stream, podcast feed, member tools)",
-      "Searchable sermon or episode archive by topic, series, & scripture",
-      "Full SEO setup + monthly analytics & recommendations call",
-      "Priority support (24h response)",
+      "12 branded graphics per month, published to Facebook and Instagram",
+      "Written and designed for your ministry, captions included",
+      "Delivered in one batch for your approval before the month starts",
+      "Facebook and Instagram profile setup and upkeep",
+      "Auto-reply that texts anyone who comments a keyword on your posts",
+      "Priority support, same business day",
     ],
   },
   {
     name: "Established",
-    target: "For large-reach ministries — multi-campus congregations, top-tier creator-pastors, multi-platform organizations",
+    target: "We run your website, your social, and your video.",
     anchorPrice: "",
-    price: "$449.99",
-    cadence: "per month + $1,500 one-time setup",
+    price: "$349",
+    cadence: "per month + $1,500 one-time build",
     savings: "",
     mostPopular: false,
     features: [
       "Everything in Growth, plus:",
-      "Multi-campus / multi-platform architecture",
-      "Member portal & community sign-in experiences",
-      "Custom integrations (Planning Center, CCB, Patreon, Circle, Tithe.ly, Pushpay)",
-      "Dedicated account manager",
-      "Quarterly strategy sessions",
-      "Direct text access to the founder",
+      "4 sermons published to YouTube per month from footage you provide",
+      "4 custom thumbnails per month, one per sermon",
+      "Titles, descriptions, and tags written for search",
+      "YouTube channel setup, branding, and optimization",
+      "A live chat assistant on your site, trained on your ministry",
+      "Monthly content strategy report",
+      "Same-day turnaround and a direct line to the founder",
     ],
   },
 ];
 
 export const PRICING_TERMS =
-  "All plans month-to-month. Cancel anytime. One-time setup covers design, build, content migration, & launch.";
+  "The one-time build can be paid in full, split in half, or split in thirds — or rolled into your monthly so you start with nothing up front. Nothing begins until a first payment clears.";
 
 export const PRICING_CROSSSELL =
   "After your site is live, we also offer email marketing retainers for ministries ready to grow their audience digitally. Ask about it on your walkthrough call.";
