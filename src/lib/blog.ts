@@ -64,9 +64,10 @@ const modules = import.meta.glob<string>("../content/blog/*.md", {
 });
 
 export const posts: BlogPost[] = Object.entries(modules)
-  .map(([path, raw]) =>
-    toPost(raw, path.split("/").pop()!.replace(/\.md$/, "")),
-  )
+  .map(([path, raw]) => {
+    const filename = path.split("/").pop() ?? "";
+    return toPost(raw, filename.replace(/\.md$/, ""));
+  })
   .filter((p): p is BlogPost => p !== null)
   .sort((a, b) => (a.publishDate < b.publishDate ? 1 : -1));
 

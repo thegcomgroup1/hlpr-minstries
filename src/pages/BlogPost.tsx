@@ -9,10 +9,6 @@ const BlogPost = () => {
   const post = slug ? getPost(slug) : undefined;
 
   if (!slug) return <NotFound />;
-  if (window.location.pathname.endsWith("/")) {
-    return <Navigate replace to={`/blog/${slug}`} />;
-  }
-  if (!slug) return <NotFound />;
   if (typeof window !== "undefined" && window.location.pathname.endsWith("/")) {
     return <Navigate replace to={`/blog/${slug}`} />;
   }
