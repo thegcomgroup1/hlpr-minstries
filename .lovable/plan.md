@@ -28,10 +28,11 @@ Existing design system only — same colors, fonts, spacing, header, footer. Pos
 
 ## Technical notes
 
-- Markdown parsing: `react-markdown` + `remark-gfm` and a tiny frontmatter parser; markdown is loaded via `import.meta.glob('../content/blog/*.md', { as: 'raw', eager: true })`. No other new dependencies.
-- Pre-render step: `scripts/prerender.ts` added as a `postbuild` script. It builds an SSR bundle of the app, renders each blog route with `renderToString` + `StaticRouter` + `HelmetProvider`, injects markup and head tags into the built `index.html` template, and writes `dist/blog/index.html` and `dist/blog/<slug>/index.html`.
+- Markdown parsing: `react-markdown` + `remark-gfm` and a tiny frontmatter parser; markdown is loaded with the current Vite 5 glob form `import.meta.glob('../content/blog/*.md', { query: '?raw', import: 'default', eager: true })` — the deprecated `{ as: 'raw' }` form is not used. No other new dependencies.
+- Pre-render step: `scripts/prerender.ts` added as a `postbuild` script. It builds an SSR bundle of the app, renders each blog route with `renderToString` + `StaticRouter` + `HelmetProvider`, injects markup and head tags into the built `index.html` template, and writes `dist/blog/index.html` and `dist/blog/<slug>/index.html`. The page count is capped by a constant so the build can never blow past hosting's file limit.
 - Browser-only code (Clarity, consent, `window`/`document` access) is guarded so SSR doesn't crash; the analytics scripts still only run client side after consent.
-- `scripts/generate-sitemap.ts` switches its post discovery from `src/content/posts/*.tsx` to the markdown frontmatter. `lastmod` comes from each post's `publishDate`, not build time.
+- `scripts/generate-sitemap.ts` switches its post discovery from `src/content/posts/*.tsx` to the markdown frontmatter, emitting non-trailing-slash URLs. `lastmod` comes from each post's `publishDate`, not build time.
+- Existing slugs `church-website-cost-2026` and `church-website-checklist` are preserved byte-for-byte, so no redirects are needed for them.
 
 ### Two things to verify after publish
 
