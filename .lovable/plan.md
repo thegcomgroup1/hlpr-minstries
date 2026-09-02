@@ -1,40 +1,36 @@
-## Care Plans PDF — final cosmetic pass
+# Markdown blog with real pre-rendered HTML at /blog
 
-Two small edits to `scripts/build-care-plans-pdf.py`, then regenerate and visually QA.
+Goal: blog posts whose full text is in the raw HTML response before any JavaScript runs, so Google (and any crawler that doesn't execute JS) indexes them immediately. Everything outside the blog stays untouched.
 
-### 1. Fill the whitespace with a trust strip
+## What changes
 
-Insert a full-width band between the month-to-month tagline and the navy footer:
+1. **Posts become markdown files.** New folder `src/content/blog/`, one `.md` per post with frontmatter: `title, slug, metaTitle, metaDescription, publishDate, featuredImage, excerpt`. Adding a post = adding a file.
+2. **The two existing posts** (`church-website-cost-2026`, `church-website-checklist`) get converted to markdown at the same URLs, and the old `.tsx` post files plus the `src/content/posts` loader are removed. One system, no duplicates.
+3. **One new placeholder post** so the routes can be verified end to end.
+4. **Pre-rendering at build time.** After `vite build`, a script renders `/blog` and every `/blog/<slug>` to real static HTML files in `dist/`, each with the full post body, head tags, and JSON-LD baked in. React then hydrates on top, so behavior is unchanged for users.
+5. **Sitemap** regenerates from the markdown files (index + every post). `robots.txt` is confirmed not to block `/blog`.
+6. **No nav link** — `/blog` stays out of the header and footer until you approve the content. Routes remain crawlable and in the sitemap.
 
-> **Every plan includes a real human team.** Reach us by text, email, or Slack — updates live within 24 hours.
+## Per-post SEO (baked into the static HTML)
 
-Styling:
-- Light blue-gray background (`#EEF3FA`) to bridge the card row and footer without competing with either
-- Centered, ~10.5pt Inter, navy `#1B2A4A` text, bold lead phrase
-- Padding ~`0.22in 0.5in`, full bleed left/right
-- Sits directly above the existing navy footer band (footer still anchored at bottom)
+Unique title/description, self-referencing canonical, `og:title/description/image/url`, `og:type=article`, `twitter:summary_large_image`, and `BlogPosting` JSON-LD (headline, description, image, datePublished, author, publisher). Exactly one `<h1>` (the post title); markdown `##`/`###` render as real `<h2>`/`<h3>`.
 
-This turns the empty void into the trust line boards actually weigh, without changing any pricing, deliverables, badge, or footer copy.
+## Design
 
-### 2. Clean checkmark rendering
+Existing design system only — same colors, fonts, spacing, header, footer. Post page: title, date, featured image, body at ~700px max width, mobile first, and a CTA block at the bottom defined in one place (`src/lib/content.ts`) so you edit it once. Index page: card list with featured image, title, excerpt, date, newest first. No pagination, categories, or tags.
 
-The current bullets use a CSS-masked SVG check. In some renders the mask edges can read as a faint double-stroke. Switch to a single inline SVG check per `<li>` (same navy `#2E5FA3`, 2.4 stroke, round caps) so the glyph is identical across every card and rasterizes cleanly at 100% zoom. No layout change — same size, same spacing.
+## Technical notes
 
-### 3. Regenerate + QA
+- Markdown parsing: `react-markdown` + `remark-gfm` and a tiny frontmatter parser; markdown is loaded via `import.meta.glob('../content/blog/*.md', { as: 'raw', eager: true })`. No other new dependencies.
+- Pre-render step: `scripts/prerender.ts` added as a `postbuild` script. It builds an SSR bundle of the app, renders each blog route with `renderToString` + `StaticRouter` + `HelmetProvider`, injects markup and head tags into the built `index.html` template, and writes `dist/blog/index.html` and `dist/blog/<slug>/index.html`.
+- Browser-only code (Clarity, consent, `window`/`document` access) is guarded so SSR doesn't crash; the analytics scripts still only run client side after consent.
+- `scripts/generate-sitemap.ts` switches its post discovery from `src/content/posts/*.tsx` to the markdown frontmatter. `lastmod` comes from each post's `publishDate`, not build time.
 
-- Run the existing build command to overwrite `public/hlpr-care-plans.pdf`
-- Render with `pdftoppm -jpeg -r 150` and visually inspect:
-  - Exactly one page (no spillover)
-  - Footer still anchored at the bottom edge
-  - Trust strip sits flush above footer, no gap
-  - Checks render as single clean strokes on all three cards (Foundation's last two items + Growth's "Priority support" specifically)
-- Copy final PDF to `/mnt/documents/hlpr-care-plans.pdf` and surface as artifact
+### Two things to verify after publish
 
-### Out of scope
+- The Lovable preview runs the dev server, so pre-rendered files only exist in the published build. Verification has to happen against the live domain with the curl grep test.
+- Static hosting must serve `dist/blog/<slug>/index.html` for that path instead of falling back to the SPA `index.html`. If the curl test returns 0 after publish, that fallback is the cause and the fix is to adjust how those routes are emitted — I'll re-check and correct it rather than leaving it client-rendered.
 
-No price changes. No deliverable changes. No edits to `src/components/landing/CarePlans.tsx` or any other site code — this is PDF-only.
+## Out of scope (but worth acting on)
 
-### Files touched
-
-- `scripts/build-care-plans-pdf.py` (edit HTML template)
-- `public/hlpr-care-plans.pdf` (regenerated)
+The public GitHub repo with a committed `.env`: rotate the exposed keys and make the repo private before opening it further. The backend keys in this project can be rotated from the backend settings; I can't change GitHub repo visibility from here.
