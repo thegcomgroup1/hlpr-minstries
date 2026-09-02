@@ -9,11 +9,18 @@ Goal: blog posts whose full text is in the raw HTML response before any JavaScri
 3. **One new placeholder post** so the routes can be verified end to end.
 4. **Pre-rendering at build time.** After `vite build`, a script renders `/blog` and every `/blog/<slug>` to real static HTML files in `dist/`, each with the full post body, head tags, and JSON-LD baked in. React then hydrates on top, so behavior is unchanged for users.
 5. **Sitemap** regenerates from the markdown files (index + every post). `robots.txt` is confirmed not to block `/blog`.
-6. **No nav link** — `/blog` stays out of the header and footer until you approve the content. Routes remain crawlable and in the sitemap.
+6. **No nav link yet** — `/blog` stays out of the header and footer while post #1 is a placeholder. As soon as you've read post #1 on the live domain, the nav link goes in so the posts aren't orphaned and homepage authority flows to them. This is a tracked follow-up, not a permanent state.
+7. **URL form is canonical without a trailing slash** — `/blog/my-post`, never `/blog/my-post/`. Canonical tag, sitemap entry, and every internal link use that exact form, and the trailing-slash variant redirects to it, so Google never sees two URLs for one page.
 
 ## Per-post SEO (baked into the static HTML)
 
-Unique title/description, self-referencing canonical, `og:title/description/image/url`, `og:type=article`, `twitter:summary_large_image`, and `BlogPosting` JSON-LD (headline, description, image, datePublished, author, publisher). Exactly one `<h1>` (the post title); markdown `##`/`###` render as real `<h2>`/`<h3>`.
+Unique title/description, self-referencing canonical, `og:title/description/image/url`, `og:type=article`, `twitter:summary_large_image`, and `BlogPosting` JSON-LD. Exactly one `<h1>` (the post title); markdown `##`/`###` render as real `<h2>`/`<h3>`.
+
+JSON-LD values are pinned, not guessed:
+- `author`: Person, name "Tim Godson"
+- `publisher`: Organization, name "hlpr Ministries", logo pointing at the existing hlpr logo asset in this project
+- `headline`, `description`, `image`, `datePublished` come from the post frontmatter
+
 
 ## Design
 
@@ -21,10 +28,11 @@ Existing design system only — same colors, fonts, spacing, header, footer. Pos
 
 ## Technical notes
 
-- Markdown parsing: `react-markdown` + `remark-gfm` and a tiny frontmatter parser; markdown is loaded via `import.meta.glob('../content/blog/*.md', { as: 'raw', eager: true })`. No other new dependencies.
-- Pre-render step: `scripts/prerender.ts` added as a `postbuild` script. It builds an SSR bundle of the app, renders each blog route with `renderToString` + `StaticRouter` + `HelmetProvider`, injects markup and head tags into the built `index.html` template, and writes `dist/blog/index.html` and `dist/blog/<slug>/index.html`.
+- Markdown parsing: `react-markdown` + `remark-gfm` and a tiny frontmatter parser; markdown is loaded with the current Vite 5 glob form `import.meta.glob('../content/blog/*.md', { query: '?raw', import: 'default', eager: true })` — the deprecated `{ as: 'raw' }` form is not used. No other new dependencies.
+- Pre-render step: `scripts/prerender.ts` added as a `postbuild` script. It builds an SSR bundle of the app, renders each blog route with `renderToString` + `StaticRouter` + `HelmetProvider`, injects markup and head tags into the built `index.html` template, and writes `dist/blog/index.html` and `dist/blog/<slug>/index.html`. The page count is capped by a constant so the build can never blow past hosting's file limit.
 - Browser-only code (Clarity, consent, `window`/`document` access) is guarded so SSR doesn't crash; the analytics scripts still only run client side after consent.
-- `scripts/generate-sitemap.ts` switches its post discovery from `src/content/posts/*.tsx` to the markdown frontmatter. `lastmod` comes from each post's `publishDate`, not build time.
+- `scripts/generate-sitemap.ts` switches its post discovery from `src/content/posts/*.tsx` to the markdown frontmatter, emitting non-trailing-slash URLs. `lastmod` comes from each post's `publishDate`, not build time.
+- Existing slugs `church-website-cost-2026` and `church-website-checklist` are preserved byte-for-byte, so no redirects are needed for them.
 
 ### Two things to verify after publish
 
