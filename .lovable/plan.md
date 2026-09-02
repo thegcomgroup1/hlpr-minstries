@@ -9,11 +9,18 @@ Goal: blog posts whose full text is in the raw HTML response before any JavaScri
 3. **One new placeholder post** so the routes can be verified end to end.
 4. **Pre-rendering at build time.** After `vite build`, a script renders `/blog` and every `/blog/<slug>` to real static HTML files in `dist/`, each with the full post body, head tags, and JSON-LD baked in. React then hydrates on top, so behavior is unchanged for users.
 5. **Sitemap** regenerates from the markdown files (index + every post). `robots.txt` is confirmed not to block `/blog`.
-6. **No nav link** — `/blog` stays out of the header and footer until you approve the content. Routes remain crawlable and in the sitemap.
+6. **No nav link yet** — `/blog` stays out of the header and footer while post #1 is a placeholder. As soon as you've read post #1 on the live domain, the nav link goes in so the posts aren't orphaned and homepage authority flows to them. This is a tracked follow-up, not a permanent state.
+7. **URL form is canonical without a trailing slash** — `/blog/my-post`, never `/blog/my-post/`. Canonical tag, sitemap entry, and every internal link use that exact form, and the trailing-slash variant redirects to it, so Google never sees two URLs for one page.
 
 ## Per-post SEO (baked into the static HTML)
 
-Unique title/description, self-referencing canonical, `og:title/description/image/url`, `og:type=article`, `twitter:summary_large_image`, and `BlogPosting` JSON-LD (headline, description, image, datePublished, author, publisher). Exactly one `<h1>` (the post title); markdown `##`/`###` render as real `<h2>`/`<h3>`.
+Unique title/description, self-referencing canonical, `og:title/description/image/url`, `og:type=article`, `twitter:summary_large_image`, and `BlogPosting` JSON-LD. Exactly one `<h1>` (the post title); markdown `##`/`###` render as real `<h2>`/`<h3>`.
+
+JSON-LD values are pinned, not guessed:
+- `author`: Person, name "Tim Godson"
+- `publisher`: Organization, name "hlpr Ministries", logo pointing at the existing hlpr logo asset in this project
+- `headline`, `description`, `image`, `datePublished` come from the post frontmatter
+
 
 ## Design
 
