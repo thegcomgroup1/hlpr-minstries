@@ -23,6 +23,13 @@ export const NAV_LINKS = [
   { label: "FAQ", href: "/#faq" },
 ];
 
+// Shared CTA for every blog post. Edit this once to update all posts.
+export const BLOG_CTA = {
+  heading: "Ready to see what your ministry's site could look like?",
+  body: "We'll build a free homepage preview in 72 hours. No payment until you approve.",
+  buttonLabel: "Get my free preview",
+};
+
 export const MINISTRY_PORTFOLIO = [
   {
     id: "lifework",
