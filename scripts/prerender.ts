@@ -1,17 +1,29 @@
 import { execFileSync } from "child_process";
-import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "fs";
+import { mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "fs";
 import { resolve } from "path";
 
 const MAX_PRERENDER_PAGES = Number(process.env.MAX_PRERENDER_PAGES || 100);
 const ssrDir = resolve(".prerender");
+const postsDir = resolve("src/content/blog");
+
+const markdownFrontmatter = (source: string) => {
+  const match = source.replace(/\r\n/g, "\n").match(/^---\n([\s\S]*?)\n---/);
+  if (!match) return {} as Record<string, string>;
+  return Object.fromEntries(
+    match[1].split("\n").flatMap((line) => {
+      const index = line.indexOf(":");
+      return index === -1
+        ? []
+        : [[line.slice(0, index).trim(), line.slice(index + 1).trim().replace(/^['"]|['"]$/g, "")]];
+    }),
+  );
+};
 
 rmSync(ssrDir, { recursive: true, force: true });
 execFileSync("bunx", ["vite", "build", "--ssr", "src/ssr.tsx", "--outDir", ssrDir], { stdio: "inherit" });
 
 const { SsrApp } = await import(`${ssrDir}/ssr.js`);
 const { renderToString } = await import("react-dom/server");
-const { posts } = await import("../src/lib/blog.ts");
-const { HelmetProvider } = await import("react-helmet-async");
 
 const renderRoute = async (path: string) => {
   const helmetContext: Record<string, unknown> = {};
