@@ -47,7 +47,12 @@ const renderRoute = async (path: string) => {
   return cleanTemplate;
 };
 
-const routes = ["/blog", ...posts.slice(0, MAX_PRERENDER_PAGES - 1).map((post) => `/blog/${post.slug}`)];
+const posts = readdirSync(postsDir)
+  .filter((file) => file.endsWith(".md"))
+  .map((file) => markdownFrontmatter(readFileSync(resolve(postsDir, file), "utf8")))
+  .map((data) => data.slug)
+  .filter((slug): slug is string => Boolean(slug));
+const routes = ["/blog", ...posts.slice(0, MAX_PRERENDER_PAGES - 1).map((slug) => `/blog/${slug}`)];
 for (const route of routes) {
   const output = resolve("dist", `${route.slice(1)}/index.html`);
   mkdirSync(resolve(output, ".."), { recursive: true });
