@@ -23,6 +23,9 @@ export const Hero = () => {
             </div>
 
             <h1 className="mt-5 font-serif font-bold tracking-tight text-brand-navy text-balance text-[clamp(2.25rem,5.5vw,3.75rem)] leading-[1.05]">
+              <span className="block font-sans text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-brand-navy-soft mb-3">
+                {HERO.headline.descriptor}
+              </span>
               {HERO.headline.pre}{" "}
               <span className="block sm:inline">{HERO.headline.bold}</span>
             </h1>
