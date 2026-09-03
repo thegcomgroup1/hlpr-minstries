@@ -21,6 +21,7 @@ export const NAV_LINKS = [
   { label: "How It Works", href: "/#how-it-works" },
   { label: "Founder", href: "/#founder" },
   { label: "FAQ", href: "/#faq" },
+  { label: "Blog", href: "/blog" },
 ];
 
 // Shared CTA for every blog post. Edit this once to update all posts.
