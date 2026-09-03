@@ -32,12 +32,12 @@ export const MinistryPortfolio = () => {
               {FOUNDING_PARTNER.badge}
             </div>
             <div className="flex-1">
-              <h3 className="font-serif text-xl sm:text-2xl font-bold text-brand-navy text-balance leading-snug">
+              <p className="font-serif text-xl sm:text-2xl font-bold text-brand-navy text-balance leading-snug">
                 {FOUNDING_PARTNER.headline}{" "}
                 <span className="text-brand-navy-soft font-normal">
                   {FOUNDING_PARTNER.body}
                 </span>
-              </h3>
+              </p>
             </div>
             {FOUNDING_PARTNER.spots && (
               <div className="flex-shrink-0 font-serif text-base font-bold text-brand-navy">
