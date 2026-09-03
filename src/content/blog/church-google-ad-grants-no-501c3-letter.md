@@ -5,6 +5,7 @@ metaTitle: No 501(c)(3) Letter? Here's Whether Your Church Qualifies for Google 
 metaDescription: Most churches never filed for IRS recognition, and Google requires it. Here's how to find out in five minutes whether your church can get the Ad Grant, and what to do if it can't.
 publishDate: 2026-09-03
 featuredImage: /__l5e/assets-v1/d20e50b2-dc25-4578-842d-1ce4df366457/ad-grants-eligibility-tree.png
+ogImage: /__l5e/assets-v1/47f64f9e-599a-4563-8607-0d9b417dddc8/og-ad-grants-eligibility.png
 excerpt: Most churches never filed for IRS recognition, and Google requires it. Here's how to find out in five minutes whether your church can get the Ad Grant, and what to do if it can't.
 ---
 

@@ -8,6 +8,7 @@ export interface BlogPost {
   metaDescription: string;
   publishDate: string; // ISO yyyy-mm-dd
   featuredImage: string;
+  ogImage: string;
   excerpt: string;
   body: string; // markdown
 }
@@ -52,6 +53,7 @@ export function toPost(raw: string, fallbackSlug: string): BlogPost | null {
     metaDescription: data.metaDescription || data.excerpt || "",
     publishDate: data.publishDate || "",
     featuredImage: data.featuredImage || "/og-home.jpg",
+    ogImage: data.ogImage || data.featuredImage || "/og-home.jpg",
     excerpt: data.excerpt || data.metaDescription || "",
     body,
   };
