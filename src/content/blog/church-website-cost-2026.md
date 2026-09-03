@@ -2,63 +2,98 @@
 title: How much should a church website cost in 2026?
 slug: church-website-cost-2026
 metaTitle: How Much Should a Church Website Cost in 2026?
-metaDescription: A clear breakdown of what churches actually pay for a website in 2026 — DIY builders, freelancers, agencies, and done-for-you packages — plus what's worth paying for and what isn't.
-publishDate: 2026-05-12
-featuredImage: /og-home.jpg
-excerpt: A clear breakdown of what churches actually pay for a website in 2026 — DIY builders, freelancers, agencies, and done-for-you packages — plus what's worth paying for and what isn't.
+metaDescription: A clear breakdown of what churches actually pay for a website in 2026 — DIY builders, freelancers, done-for-you services, and agencies — plus what's worth paying for and what isn't.
+publishDate: 2026-09-03
+featuredImage: /__l5e/assets-v1/2f163cf2-0b02-4e8a-a105-05fc2a5f2f91/church-website-cost-hero.png
+ogImage: /__l5e/assets-v1/69349169-ae4a-4e8d-aae8-7031b6188601/og-church-website-cost.png
+excerpt: Ask three people what a church website should cost and you'll get three answers between free and twenty-five thousand dollars. Here's the honest breakdown, including our own numbers.
 ---
 
-If you've ever asked three people how much a church website should cost, you've gotten three wildly different answers — somewhere between "I'll do it free on Wix" and "$25,000 from a Nashville agency." Both can be true. Neither is helpful.
+Ask three people what a church website should cost and you'll get answers ranging from "free on Wix" to "$25,000 from an agency." Both are real prices. Neither one helps you decide.
 
-Here's the honest 2026 breakdown of what ministries actually pay, what's behind each number, and how to pick the option that fits your church without overspending — or buying something you'll regret in 18 months.
+Here is the honest breakdown of what ministries actually pay in 2026, what sits behind each number, and how to pick without overspending or buying something you'll regret in eighteen months.
 
-## The four real options (and what each costs)
+We put our own pricing in here too, in the same terms as everyone else's. It felt dishonest to write a pricing guide and leave ourselves out of it.
 
-### 1. DIY website builder — $15–$30/month
+## The four real options
 
-Squarespace, Wix, and Subsplash Sites all sit here. You pick a template, drop in your sermon links, and you're live. Total first-year cost is typically **$200–$500** including domain and a stock-photo license.
+### 1. DIY website builder
 
-**Honest take:** If your church has under 100 attendees, no full-time staff, and just needs a service-times page and a donate button — DIY is fine. The risk: you'll spend 20–40 hours learning the editor, and the site will look like every other Squarespace site.
+**Typically $15–$30/month, or $200–$500 for your first year including a domain.**
 
-### 2. Freelancer — $1,500–$5,000 one-time
+Squarespace, Wix, and similar tools. You pick a template, add your service times and a giving link, and you are live.
 
-A single designer (often through Upwork or a referral) builds you a custom site, hands you the keys, and walks away.
+**Honest take:** If your congregation is under a hundred people, you have no staff, and you need a service-times page and a donate button, this is a reasonable answer. The cost you won't see on the invoice is your time. Budget twenty to forty hours learning the editor, and expect the result to look like a template, because it is one.
 
-**Honest take:** Quality varies wildly. The good ones deliver beautiful work. The not-so-good ones disappear after launch and you're left with a site you can't update. Always ask: "What happens in 6 months when I need to change something?"
+The bigger risk is what happens after. Sites built this way tend to go stale, not because the tool is bad, but because the person who built it got busy with actual ministry.
 
-### 3. Done-for-you ministry service — $200–$500/month
+### 2. Freelancer
 
-Companies like Tithe.ly Sites, Subsplash, and HLPR for Ministries bundle design, hosting, updates, and ongoing changes into a monthly subscription. No upfront fee, or a small setup fee in the $0–$1,500 range.
+**Typically $1,500–$5,000, one time.**
 
-**Honest take:** This is the right answer for most churches between 50 and 1,000 attendees. You get a professional site that stays current, and you never have to learn a CMS or chase down a freelancer. Total annual cost: **$2,400–$6,000.**
+A single designer builds you something custom, hands over the login, and moves on.
 
-### 4. Agency build — $8,000–$25,000+ one-time
+**Honest take:** Quality swings hard in both directions. The good ones do beautiful work for the money. The bad ones vanish after launch and leave you with a site nobody at the church knows how to change.
 
-A full creative agency does brand strategy, custom design, photography, and a bespoke build. Annual maintenance is usually another $2,000–$5,000.
+Ask one question before you hire anyone: what happens in six months when our service time changes and I need it updated? If the answer is vague, you have your answer.
 
-**Honest take:** Justified only for multi-campus churches (1,000+ attendees) with real brand needs. Below that, you are paying for a deck and a process you don't need.
+### 3. Done-for-you ministry service
 
-## What's actually worth paying for
+**Typically $200–$500/month with little or no setup fee.** Some providers, including us, charge a one-time build fee and a lower monthly instead.
 
-- **Mobile-first design.** Over 70% of church website visits in 2026 happen on a phone. A site that "works on mobile" is not the same as a site designed for it.
-- **Fast loading.** Every extra second of load time costs you about 7% of visitors. Speed is a feature, not a bonus.
-- **Ongoing updates included.** Service times change, staff change, sermon series change. If updates cost extra, you'll stop making them.
-- **Real SEO setup.** Local schema, sitemap, Google Search Console — so people searching "church near me" can find you.
+Design, hosting, updates, and ongoing changes bundled together. You never touch a content editor.
 
-## What's not worth paying for
+**Honest take:** This is the right answer for most churches between fifty and a thousand people. You get a site that stays current, and the volunteer who inherited the website gets their evenings back.
 
-- **A custom CMS.** If a vendor wants to build you a custom backend, run. WordPress, Webflow, and modern frameworks do this for free.
-- **"Brand strategy workshops"** — for a 200-person church, this is usually padding.
-- **Stock animations and parallax scrolling.** Aesthetic in 2018, slow and distracting in 2026.
+The pricing inside this category varies more than the range suggests, because providers split the cost differently. A pure-monthly provider at $300/month costs you $3,600 in year one and $3,600 again every year after. A provider who charges for the build up front costs more on day one and materially less every year that follows. Neither structure is wrong. They suit different budgets.
 
-## The 60-second decision framework
+If your church budgets annually and hates surprises, pure monthly is easier to approve. If you can cover a one-time build, the lower ongoing number compounds in your favor.
 
-1. **Under 100 attendees, no budget?** Use Squarespace. Pick the cleanest template. Move on.
-2. **50–1,000 attendees, want it done right?** Done-for-you monthly service. Budget $200–$500/month.
-3. **1,000+ attendees with a real brand?** Agency build. Budget $10K+ and 3–4 months.
+### 4. Agency build
 
-For most ministries reading this, option 2 is the answer. The math works: a managed monthly service gets you a site you'd pay $8,000 for upfront elsewhere, plus updates and hosting forever — and you can cancel if it stops serving you.
+**Typically $8,000–$25,000 one time, plus $2,000–$5,000 a year in maintenance.**
 
-## How HLPR fits
+Brand strategy, custom design, photography, bespoke build.
 
-We sit in option 2. We design and build your site in 14 days, manage it forever, and you see the homepage before you commit. If it doesn't reflect your ministry, you don't move forward.
+**Honest take:** Justified for multi-campus churches with real brand requirements and staff to feed the process. Below a thousand people, you are mostly paying for a discovery phase you don't need.
+
+## What we charge
+
+We sit in category three. Here are our actual numbers so you can compare them against anything else you're looking at.
+
+**Foundation — $500 build, then $57/month.** We build the site and we run it. Updates, hosting, changes, all of it. You never log in unless you want to.
+
+**Growth — $750 build, then $147/month.** Everything in Foundation, plus we run your social. Twelve branded graphics a month across Facebook and Instagram, batched for your approval.
+
+**Established — $1,500 build, then $349/month.** Everything in Growth, plus video. Four sermon videos and thumbnails a month cut from footage you already record, and a chat widget on the site.
+
+Year one on Growth comes to $2,514. Year two is $1,764. Compare that to a pure-monthly service at $300, which is $3,600 every year, forever.
+
+The build fee can be paid in full, in halves, in thirds, or folded into the monthly. We would rather work out a schedule than lower the number, because the work doesn't get smaller when the price does.
+
+## What's worth paying for
+
+- **Mobile-first design.** Most people who find your church will find it on a phone, often in a parking lot on a Sunday morning. A site that technically works on mobile is not the same as one designed for it.
+- **Speed.** Slow sites lose visitors before the page finishes loading. This is a feature, not a nice-to-have.
+- **Updates included.** Service times change. Staff change. Sermon series change. If every update costs extra, you will stop making them, and a stale site is worse than a simple one.
+- **Real search setup.** Local schema, a sitemap, and Google Search Console configured properly, so that someone searching for a church near them can actually find you.
+
+## What isn't worth paying for
+
+- **A custom content management system.** If a vendor offers to build you a proprietary backend, walk away. You will be locked to them permanently.
+- **Brand strategy workshops for a two-hundred-person church.** That's padding.
+- **Animations and parallax scrolling.** They looked modern once. Now they mostly slow the page down.
+
+## A sixty-second decision
+
+1. **Under a hundred people, no budget.** Use a DIY builder. Pick the cleanest template. Spend the saved money on something else.
+2. **Fifty to a thousand people, want it handled.** Done-for-you. Compare providers on total cost over three years, not on the monthly number alone.
+3. **A thousand or more with a real brand.** Agency. Budget five figures and three months.
+
+For most ministries reading this, the middle option is the answer. The question is only which provider and which pricing structure fits how your church actually budgets.
+
+## How we work
+
+You see your homepage before you pay anything. We build a free preview of your actual church, with your name and your photos, and walk you through it live. If it doesn't reflect your ministry, you don't move forward and you owe nothing.
+
+Sites go live in fourteen days.
