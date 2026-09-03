@@ -49,7 +49,7 @@ export const PostLayout = ({ post }: { post: BlogPost }) => {
                 src={post.featuredImage}
                 alt={post.title}
                 loading="lazy"
-                className="w-full rounded-2xl border border-border object-cover"
+                className="w-full h-auto rounded-2xl border border-border"
               />
             ) : null}
 
