@@ -67,7 +67,7 @@ const Blog = () => {
                         src={post.featuredImage}
                         alt=""
                         loading="lazy"
-                        className="mb-6 aspect-[2/1] w-full rounded-xl object-cover"
+                        className="mb-6 w-full h-auto rounded-xl"
                       />
                       <h2 className="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-brand-navy group-hover:text-brand-blue-deep transition-colors">
                         {post.title}
