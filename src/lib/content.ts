@@ -69,6 +69,7 @@ export const MINISTRY_PORTFOLIO = [
 export const HERO = {
   eyebrow: "For pastors, ministry leaders & creator-ministers",
   headline: {
+    descriptor: "Custom Church Website Design & Management",
     pre: "Your church's website is already built.",
     bold: "Come see it.",
   },
