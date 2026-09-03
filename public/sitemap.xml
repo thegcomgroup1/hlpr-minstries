@@ -23,6 +23,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://ministries.hlpr.io/blog/hello-from-hlpr-ministries</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://ministries.hlpr.io/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

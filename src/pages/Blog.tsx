@@ -2,36 +2,37 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { StickyNav } from "@/components/landing/StickyNav";
 import { Footer } from "@/components/landing/Footer";
-import { posts } from "@/lib/posts";
+import { posts, SITE_URL, postUrl } from "@/lib/blog";
 
-const formatDate = (iso: string) =>
-  new Date(iso).toLocaleDateString("en-US", {
+const formatDate = (iso: string) => {
+  if (!iso) return "";
+  const d = new Date(`${iso}T00:00:00Z`);
+  if (Number.isNaN(d.getTime())) return iso;
+  return d.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
+    timeZone: "UTC",
   });
+};
 
 const Blog = () => {
+  const description = "Practical guides on church website design, ministry SEO, online giving, podcast sites, and growing your ministry online.";
+
   return (
     <>
       <Helmet>
         <title>Blog — HLPR Ministries</title>
         <meta name="robots" content="index,follow" />
-        <meta
-          name="description"
-          content="Practical guides on church website design, ministry SEO, online giving, podcast sites, and growing your ministry online."
-        />
-        <link rel="canonical" href="https://ministries.hlpr.io/blog" />
+        <meta name="description" content={description} />
+        <link rel="canonical" href={`${SITE_URL}/blog`} />
         <meta property="og:title" content="Blog — HLPR Ministries" />
-        <meta
-          property="og:description"
-          content="Practical guides on church website design, ministry SEO, online giving, podcast sites, and growing your ministry online."
-        />
-        <meta property="og:url" content="https://ministries.hlpr.io/blog" />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={`${SITE_URL}/blog`} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://ministries.hlpr.io/og-home.jpg" />
+        <meta property="og:image" content={`${SITE_URL}/og-home.jpg`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://ministries.hlpr.io/og-home.jpg" />
+        <meta name="twitter:image" content={`${SITE_URL}/og-home.jpg`} />
       </Helmet>
       <StickyNav />
       <main id="main">
@@ -56,23 +57,26 @@ const Blog = () => {
               <p className="text-brand-navy-soft">New articles coming soon.</p>
             ) : (
               <ul className="grid gap-6 sm:gap-8">
-                {posts.map((p) => (
-                  <li key={p.slug}>
+                {posts.map((post) => (
+                  <li key={post.slug}>
                     <Link
-                      to={`/blog/${p.slug}`}
+                      to={`/blog/${post.slug}`}
                       className="block group rounded-2xl border border-border bg-card p-6 sm:p-8 hover:border-brand-blue/40 hover:shadow-soft transition-all"
                     >
-                      <p className="text-xs uppercase tracking-[0.18em] font-semibold text-brand-blue">
-                        {p.category}
-                      </p>
-                      <h2 className="mt-2 font-serif text-2xl sm:text-3xl font-bold tracking-tight text-brand-navy group-hover:text-brand-blue-deep transition-colors">
-                        {p.title}
+                      <img
+                        src={post.featuredImage}
+                        alt=""
+                        loading="lazy"
+                        className="mb-6 aspect-[2/1] w-full rounded-xl object-cover"
+                      />
+                      <h2 className="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-brand-navy group-hover:text-brand-blue-deep transition-colors">
+                        {post.title}
                       </h2>
                       <p className="mt-3 text-brand-navy-soft leading-relaxed">
-                        {p.description}
+                        {post.excerpt}
                       </p>
                       <p className="mt-4 text-sm text-brand-navy-soft">
-                        {formatDate(p.date)} · {p.readMinutes} min read
+                        <time dateTime={post.publishDate}>{formatDate(post.publishDate)}</time>
                       </p>
                     </Link>
                   </li>
