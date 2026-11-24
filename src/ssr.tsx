@@ -3,6 +3,7 @@ import { StaticRouter } from "react-router-dom/server";
 import { HelmetProvider } from "react-helmet-async";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import Preview from "./pages/Preview";
 import NotFound from "./pages/NotFound";
 
 export const SsrApp = ({ location, helmetContext }: { location: string; helmetContext: Record<string, unknown> }) => (
@@ -11,6 +12,7 @@ export const SsrApp = ({ location, helmetContext }: { location: string; helmetCo
       <Routes>
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/preview" element={<Preview />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </StaticRouter>

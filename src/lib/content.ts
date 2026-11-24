@@ -426,3 +426,29 @@ export const VIDEO = {
   watchUrl: "https://www.youtube.com/watch?v=yM1bvu2uPrQ",
   watchLabel: "Watch on YouTube",
 };
+
+// The page behind ministries.hlpr.io/preview — where the VSL link sends people.
+export const PREVIEW = {
+  eyebrow: "Your free homepage preview",
+  headline: "Watch this before you decide on your church's website.",
+  sub: "Two minutes on what a first-time visitor actually sees when they search for your ministry — then a 20-minute call where you see the homepage we've already built for you.",
+  steps: [
+    {
+      n: "01",
+      title: "Watch the two minutes",
+      body: "The three things that decide whether a first-time visitor stays or keeps scrolling.",
+    },
+    {
+      n: "02",
+      title: "Pick a 20-minute slot",
+      body: "We put the homepage we've already built for your ministry on the screen and you tell us what to change.",
+    },
+    {
+      n: "03",
+      title: "You decide",
+      body: "Say yes and your full site is live within 14 days. Say no and you walk away owing nothing.",
+    },
+  ],
+  closingHeadline: "Your homepage is already built. Come see it.",
+};
+
