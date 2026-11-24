@@ -7,6 +7,7 @@ import { RiskReversalStrip } from "@/components/landing/RiskReversalStrip";
 import { ValueProps } from "@/components/landing/ValueProps";
 import { Differentiator } from "@/components/landing/Differentiator";
 import { HowItWorks } from "@/components/landing/HowItWorks";
+import { VideoSection } from "@/components/landing/VideoSection";
 import { MinistryPortfolio } from "@/components/landing/MinistryPortfolio";
 import { FounderSection } from "@/components/landing/FounderSection";
 import { Pricing } from "@/components/landing/Pricing";
@@ -14,7 +15,7 @@ import { FudStrip } from "@/components/landing/FudStrip";
 import { FinalCtaBand } from "@/components/landing/FinalCtaBand";
 import { FAQ } from "@/components/landing/FAQ";
 import { Footer } from "@/components/landing/Footer";
-import { FAQS } from "@/lib/content";
+import { FAQS, VIDEO } from "@/lib/content";
 
 const OG_IMAGE = "https://ministries.hlpr.io/og-home.jpg";
 
@@ -59,6 +60,20 @@ const serviceJsonLd = {
   ],
 };
 
+const videoJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: VIDEO.title,
+  description: VIDEO.body,
+  thumbnailUrl: [`https://i.ytimg.com/vi/${VIDEO.id}/maxresdefault.jpg`],
+  uploadDate: "2026-11-24T14:46:51-08:00",
+  duration: "PT2M0S",
+  embedUrl: `https://www.youtube.com/embed/${VIDEO.id}`,
+  contentUrl: `https://www.youtube.com/watch?v=${VIDEO.id}`,
+  publisher: { "@type": "Organization", name: "HLPR Ministries" },
+  sameAs: `https://www.youtube.com/watch?v=${VIDEO.id}`,
+};
+
 const Index = () => {
   return (
     <>
@@ -88,6 +103,7 @@ const Index = () => {
         />
         <meta name="twitter:image" content={OG_IMAGE} />
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(videoJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(organizationJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceJsonLd)}</script>
       </Helmet>
@@ -100,6 +116,7 @@ const Index = () => {
         <ValueProps />
         <Differentiator />
         <HowItWorks />
+        <VideoSection />
         <MinistryPortfolio />
         <FounderSection />
         <Pricing />

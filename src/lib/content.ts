@@ -414,3 +414,15 @@ export const FAQS = [
     a: "You'll get a calendar link to pick a 20-minute slot this week. On that call we walk you through the homepage we've already built for your ministry, live on screen, and you tell us what to change. If you want us to finish it, we launch within 14 days. If not, you walk away and owe nothing.",
   },
 ];
+
+export const VIDEO = {
+  id: "yM1bvu2uPrQ",
+  title: "If Someone Googles Your Church Tonight, What Do They Find?",
+  eyebrow: "Watch this first",
+  heading: "If someone googles your church tonight, what do they find?",
+  body: "A two-minute look at what a first-time visitor actually sees when they search for your ministry — and the three things that decide whether they stay or keep scrolling.",
+  playLabel: "Play video: If Someone Googles Your Church Tonight, What Do They Find?",
+  caption: "2 minutes · HLPR Ministries",
+  watchUrl: "https://www.youtube.com/watch?v=yM1bvu2uPrQ",
+  watchLabel: "Watch on YouTube",
+};
