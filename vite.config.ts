@@ -13,6 +13,11 @@ export default defineConfig(({ mode }) => ({
     },
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  // This package exposes ESM in a .js file without declaring type: module.
+  // Bundle it for SSR so Node does not misread it as CommonJS during prerendering.
+  ssr: {
+    noExternal: ["react-helmet-async"],
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
