@@ -7,7 +7,6 @@ import { RiskReversalStrip } from "@/components/landing/RiskReversalStrip";
 import { ValueProps } from "@/components/landing/ValueProps";
 import { Differentiator } from "@/components/landing/Differentiator";
 import { HowItWorks } from "@/components/landing/HowItWorks";
-import { VideoSection } from "@/components/landing/VideoSection";
 import { MinistryPortfolio } from "@/components/landing/MinistryPortfolio";
 import { FounderSection } from "@/components/landing/FounderSection";
 import { Pricing } from "@/components/landing/Pricing";
@@ -116,7 +115,6 @@ const Index = () => {
         <ValueProps />
         <Differentiator />
         <HowItWorks />
-        <VideoSection />
         <MinistryPortfolio />
         <FounderSection />
         <Pricing />

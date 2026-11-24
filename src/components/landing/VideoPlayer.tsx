@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Play } from "lucide-react";
 import { cn } from "@/lib/utils";
+import videoCover from "@/assets/hlpr-vsl-thumbnail-hybrid.png.asset.json";
 
 interface VideoPlayerProps {
   /** YouTube video id. */
@@ -17,7 +18,7 @@ interface VideoPlayerProps {
  */
 export const VideoPlayer = ({ id, title, className }: VideoPlayerProps) => {
   const [playing, setPlaying] = useState(false);
-  const thumbHi = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
+  const thumbHi = id === "yM1bvu2uPrQ" ? videoCover.url : `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
   const thumbLo = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
 
   return (
@@ -51,7 +52,7 @@ export const VideoPlayer = ({ id, title, className }: VideoPlayerProps) => {
             }}
             alt=""
             aria-hidden
-            loading="lazy"
+            loading="eager"
             decoding="async"
             className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
           />

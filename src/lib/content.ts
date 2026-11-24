@@ -8,7 +8,7 @@ export const BUSINESS = {
   domain: "ministries.hlpr.io",
   ctaUrl:
     "https://links.hlpr.io/widget/booking/gPnL2RU578xVCKw8faDS?utm_source=ministries-lp&utm_medium=cta&utm_campaign=organic",
-  ctaLabel: "See My Homepage Preview",
+  ctaLabel: "Get my free preview",
   riskReversal:
     "We build your homepage first. You only pay if you want us to finish it.",
   riskReversalShort:
@@ -73,7 +73,7 @@ export const HERO = {
     pre: "Your church's website is already built.",
     bold: "Come see it.",
   },
-  sub: "We build a real, custom homepage for your ministry before we ever ask you for anything — then walk you through it live so you can tell us what to change. Most churches see their site inside a week. No forms to fill out first. No templates to pick from.",
+  sub: "A real, custom homepage for your ministry, built before you pay. See it live on a 20-minute call — no templates, no obligation.",
   trust: ["Built before you commit", "Live in 14 days", "Cancel anytime"],
 };
 
